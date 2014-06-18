@@ -513,7 +513,7 @@ treeJSON = d3.json("flare.json", function(error, treeData) {
 
     // Define the root
     root = treeData;
-    root.x0 = 20;
+    root.x0 = 5;
     root.y0 = 0;
 
     // Layout the tree initially and center on the root node.
