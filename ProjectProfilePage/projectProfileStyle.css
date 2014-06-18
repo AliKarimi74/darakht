@@ -256,6 +256,7 @@ body > div {
     background-color:#FFF ;
     transition: box-shadow 0.5s linear ;
     overflow: scroll;
+    text-align: center;
 }
 
 #assign:hover {
