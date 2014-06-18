@@ -1,3 +1,5 @@
+var ptag = 2;
+
 $(document).ready(function(){
 	//------------------------------------------------------scroll---------------------------------------------------
 	$("#purple").click(function (){
@@ -252,13 +254,18 @@ $(document).ready(function(){
 				
 										
 			})
+
+    //----------------------Excess--------------
+    console.log(ptag);
+    setInterval(function(){if(ptag==2){
+        $('#excessPop').slideDown(500) ;
+        $('#blackBG').show(500) ;}},200);
+    $("#first").click(function (){
+        $('#excessPop').slideDown(500) ;
+        $('#blackBG').show(500) ;});
+
+    $('#submitExcess').click(function(e) {
+        $('#excessPop').slideUp(500) ;
+        $('#blackBG').hide(500) ;
+    });
 });
-
-
-
-
-
-
-
-
-
