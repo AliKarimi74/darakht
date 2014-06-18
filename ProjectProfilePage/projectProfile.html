@@ -1,0 +1,190 @@
+<!doctype html>
+<html>
+<link type="text/css" rel="stylesheet" href="projectProfileStyle.css"/>
+
+
+<script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+<script type="text/javascript" src="jquery-ui.js"> </script> 
+<script type="text/javascript" src="projectProfile.js"> </script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharts.com/modules/exporting.js"></script>
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="dndTree.js" type="text/javascript" > </script>
+
+<script type="text/javascript" src="jqwidgets/jqxcore.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxbuttons.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxscrollbar.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxlistbox.js"></script>
+<script type="text/javascript" src="jqwidgets/jqxcombobox.js"></script>
+
+
+<head>
+<meta http-equiv="content-type" content="text/html "charset="utf-8">
+<title>پروفایل پروزه</title>
+</head>
+
+<body>
+    <div class="panle1" >
+        <div id="tree-container"></div>
+        <div id="lineChart"> </div>
+        <div id="barChart"> </div>
+
+        <div id="pieChart"> </div>
+        	
+    </div>
+    
+    <div class="panel2">
+
+
+
+    
+    <div id="menuBar">
+    	<nav class="cl-effect-3">
+            <a href="#"><span> پروزه مـــــبداء </span></a>
+    		<a href="#"><span> صفـــــحه خانگی مــن </span></a>
+            <a href="#"><span> صفــــحه اصلــی </span></a>
+            <a href="#"><span> خـــــــــروج </span></a>
+		</nav>
+    </div>
+
+        <div id="projectInfo">
+            <div>
+                <div>
+                    <div class="projectInfo" style="border:none;" >
+                        <div > <span> پروژه سایــــت </span> </div>
+                        <p>  : عنوان پروژه </p>
+                    </div>
+
+                    <div class="projectInfo">
+                        <div> <span> کیان پیـــانی </span> </div>
+                        <p> : مدیر پروژه </p>
+                    </div>
+
+                </div>
+
+                <div>
+                    <div class="projectInfo" style="border:none;" >
+                        <div > <span>1392 / 3 / 23 </span> </div>
+                        <p> : تاریـخ آغاز </p>
+                    </div>
+
+                    <div class="projectInfo">
+                        <div> <span>1392 / 2 / 23 </span> </div>
+                        <p>: تاریـخ اتمام </p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="projectInfo" style="border:none;" >
+                        <div > <span> پروژه سایــــت </span> </div>
+                        <p>  : عنوان مسئولیت </p>
+                    </div>
+
+                    <div class="projectInfo">
+                        <div> <span> کیان پیـــانی </span> </div>
+                        <p> مدیر مسئولیت </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="ptlogo"><img src="pt.png"></div>
+
+            <!--<div id="pieChart"> </div>-->
+
+        </div> <!--end of projectInfo -->
+
+        <div id="update" >
+            <p align="center">به روز رسانــــی پروژه</p>
+            <textarea rows="5" cols="10" >توضیحـــــات به روز زســــانی</textarea>
+            <div id="updatecheck">
+                <span> : میزان پیشرفت پروژه</span>
+                <br>
+                <div><input type="checkbox"> <span> انجام شــده </span></div>
+                <div><input type="checkbox"> <span> درحال اجــرا</span> </div>
+                <div><input type="checkbox"> <span> انجام نشده</span> </div>
+            </div>
+
+
+            <button id="submitNewPm">ارسال پیغام جدید</button>
+            <button>ثبـــــت تغییرات</button>
+
+        </div>
+
+        <div id="log">
+            <div>
+                <div>
+                    <p align="right"> نام کاربری : عنوان مسئولیت به روز رسانی انجام شده </p>
+                </div>
+
+                 <!--<div id="after">درحال اجرا</div><div id="line"></div><div id="before">انجام نشده</div> -->
+               <span> درحال اجرا</span><div id="line"></div> <span> انجام نشد  </span>
+            </div>
+
+
+
+        </div>
+        
+        <div id="projectComment">
+         <div>
+        	<div> <img src="images/vh.png" /> </div>
+            <h5 align="center"> وحید خرازی</h5>
+            <p class="co" style="float:left; font-size:9px;cursor:pointer;" > ... ادامه </p><br> 
+            <p align="center"> ویـــــوا لاس وگـــــــــــــــــــــاس </p>
+             
+        </div>
+            <div class="in" style="
+            display: none;">متن پیامـــــــــــــــــــــــــــــــــــــــــــــش که خِـــــــــــــــــــــــــــــــــــــــــــــــیـــــــــــــــــلی 		طــــــــــــــــــــــولـــــــــــــــــــــــــــــــــانیه:D             </div>
+        
+        <div >
+        	<div> <img src="images/rz.png"  /> </div>
+            <h5 align="center"> رضا شایسته پور </h5>
+            <p class="co" style="float:left; font-size:9px;cursor: pointer;"> ... ادامه </p><br> 
+            <p align="center"> یا ایها الذین آمنو ! من دچار خستگی دایمی شدم :( </p>
+        </div>
+        <div class="in" style="display: none;">چرا چرا چـــــــــــرا!!:D </div>
+        
+
+            
+            
+        </div> <!--end of project Comment -->
+        
+        <div id="users">
+            
+            <div class="pm" style="display:inline-block">
+                <div class="userImage"><img src="images/rz.png" /></div>
+                <p align="center">رضا شایسته پور</p>
+                <div id="userInfo">
+                	<p> مدریت میزان خستگی </p> <span> <strong>56%</strong> </span>
+                </div>
+            </div>
+            
+            <div class="pm" style="display:inline-block">
+                <div class="userImage"><img src="images/vh.png" /></div>
+                <p align="center">وحید خرازی</p>
+                <div id="userInfo">
+                	<p> راهیان ولایت آمریکا </p> <span> <strong>100%</strong> </span>
+                </div>
+            </div>
+            
+
+        
+        </div> <!--end of users -->
+
+
+
+        
+    </div> <!--end of panel 2-->
+
+    <div id="blackBG"> </div>
+
+    <div class="messagePop" >
+        <div><input type="text"/> <span> عنــــــوان </span> </div>
+        <textarea rows="5" cols="30" ></textarea>
+        <button id="submitNewMessage"> <span> ارسال پیــــــــام  </span> </button>
+        <button id="exitNewMessage"> <span> خــــــروج  </span> </button>
+    </div>
+
+
+</body>
+</html>

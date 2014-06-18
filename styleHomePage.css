@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+
+body{
+	background-color:#FFF  ;
+	font-family:"B Homa" ;
+}
+
+body > div {
+	border:1px solid black ; 
+	height:15em ; 
+}
+
+
+.toolbar {
+	border:1px solid black ;
+	background-color: #000 ;
+	height:3em; ;
+	opacity: 0.8 ;
+	margin: 0px;
+	margin-top: -1.5% ;
+	text-align:right ;
+	padding-top:2em;
+}
+
+.toolbar span {
+	position:relative;
+	color:#CCC ;
+	margin-right:4em;
+}
+
+
+.menu {
+	margin:auto;
+	width:35em;
+	height:100% ;
+}
+
+.menu > div {
+	width:5em ;
+	height:5em  ;
+	margin-left: 1em;  ;
+	margin-top: 2em; ;
+	display:inline-block ;
+	border-radius: 5%;
+	text-align:center ;
+}
+
+.error
+{
+    font-weight: bold;
+    color: #FF0000;
+}
+
+#red{ background-color:#ea5080;color:#aa2a52;  }
+#blue{ background-color:#53bfe2;color:#2884a2; }
+#yellow{ background-color:#f8c54d;color:#ab8426; }
+#purple{ background-color:#df6dc2;color:#9f3c85; }
+#green{ background-color:#00c08b;color:#127a5d; }
+#red:hover , #blue:hover , #yellow:hover , #purple:hover , #green:hover  { opacity:0.8 ; }
+
+#red div {
+	margin-top:1.5em;
+}
+
+#blue div {
+	margin-top:1.5em;
+}
+
+#yellow div {
+	margin-top:1.5em;
+}
+
+#purple div {
+	margin-top:1.5em;
+}
+
+#green div {
+	margin-top:1.5em;
+}
+
+#signupPanel {
+}
+
+#signup {
+	float:right ; 	
+}
+
+
+#signup form * {
+	display:block ;
+}
+
+#exit {
+    margin-right: 50em;
+}
+
+
+
+
+

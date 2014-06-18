@@ -1,0 +1,896 @@
+body { 	
+	background-color:#414242 ;
+	background-image:url(bg.png) ;
+} 
+body p { 
+	font-family:"B Homa" ;
+	font-size:12px ; 
+}
+
+body span {
+	color:#000 ; 
+	font-family:"B Homa" ;
+	font-size:12px ; 
+}
+
+.resp , menuBar p , a , button :hover {
+	cursor:pointer ; 
+}
+
+
+body h5 { 
+	font-family:"B Homa" ;
+	font-size:12px ;
+	color:#486499 ; 
+}
+
+body > div {
+	margin-top:0em ; 
+	border:1px solid white ;
+	height:80em ; 
+	display:inline-block; 
+	overflow:hidden ;
+}
+
+.header{
+	text-align:right ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:10px ; 
+	background:#FFF ; 
+	margin:0 ; 
+	width:99% ; 
+	height:3em ; 
+	color:#FFF ;
+	clear:both ;
+	transition: box-shadow 0.5s linear ;  	
+}
+
+.header a {
+	font-family:"B Homa" ;
+	font-size:13px ;
+	position:relative ; 
+	right:1em ;
+	top:1em ;  
+	text-decoration:none ;
+	color:#000 ; 
+}
+
+.header a:nth-child(2) {
+	left:1em ;
+}
+
+.header a::after{
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background: #999;
+	content: '';
+	opacity: 0;
+	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
+	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+
+.header a:hover::after {
+	height: 4px;
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);	
+}
+
+.header:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+.panel1{
+	width:20% ; 
+}
+
+#info {
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	padding-top:.3em ; 
+	border-radius:.6em ; 
+	width:90% ;  
+	margin:auto ; 
+	height:30em ;
+	margin-top:2em ; 
+	background-color:#FFF ;
+	margin-bottom:1.25em ; 
+	transition: box-shadow 0.5s linear ; 
+}
+
+#info:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#pic {
+	box-shadow:0px 0px 20px rgba(72,100,147,1);
+	width:10em ;
+	height:10em ; 
+	margin:auto ; 
+	border : 1px solid #486499 ; 
+	border-radius:100% ; 	
+	margin-top : .625em ; 
+	overflow:hidden ; 
+}
+
+#pic img { max-height:10em ; max-width:10em ; } 
+
+#acc {
+	width:90% ; 
+	height:6.25em ; 
+	margin:auto ;
+	font-family:"B Homa" ;
+	font-size:12px ;
+}
+
+#social {
+	width:90% ; 
+	height:2.1em ; 
+	margin:auto ;
+}
+#social img {
+	transition: border-radius 0.5s linear ;
+	border-radius:20% ;  
+}
+
+#social div {
+	margin-right:1.3em ; 
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+#social div:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: .6em;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+#social div:hover{
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+#social div:hover:before {
+  opacity: 1;
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+#contact button {
+	font-family:"B Homa" ;
+	font-size:11px ; 
+	position:relative ;  
+	margin-top:14em ; 
+	margin-left:2em ; 
+	width:35% ;  
+	color:#FFF; 
+	background-color:rgba(72,100,147,1) ; 
+	border-radius:10px ;
+	border:3px solid rgba(72,100,147,1) ;
+}
+
+#contact button:hover {
+	color:rgba(72,100,147,1); 
+	background-color:#FFF ;	
+}
+
+
+
+#calender {
+	box-shadow: 0px 0px 10px rgba(72,100,147,1);
+	border-radius: 10px;
+	width: 90%;
+	margin: auto;
+	margin-top:2em ; 
+	height: 12.5em;
+	background-color: #FFF;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#calender * {
+	font-size:.8em; 
+	
+}
+
+#calender:hover { 
+	box-shadow:0px 0px 30px rgba(72,100,147,1); 
+}
+
+
+.panel2{
+	width:33% ; 
+}
+
+
+
+.in {
+	text-align:right ; 
+	font-family:"B Homa" ;
+	font-size:10px ;
+}
+
+
+#messages {
+	overflow:scroll ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ; 
+	width:90% ;  
+	margin:auto ; 
+	height:25em ;
+	margin-top:2em ;  
+	background-color:#FFF ;
+	margin-bottom:1.2em ;
+	transition: box-shadow 0.5s linear ; 
+}
+
+
+
+#messages:hover:before {
+	top : -1.8em ; 	
+}
+#messages:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);	
+}
+
+#messages > div {
+	overflow:hidden ; 
+	max-height:4em ; 
+	border-bottom:1px solid #999 ;
+	transition: background-color .2s linear ; 
+}
+
+
+#messages div * {
+	margin:0px ;	
+}
+#messages div div img {
+	max-width:100% ; 
+	max-height:100% ; 
+	border-radius:100% ; 
+	margin:auto; 
+}
+
+#messages div div {
+	border-radius:100% ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,0.5);	
+	border:1px solid black ; 
+	margin:2px 10px 0px 0px ; 
+	height:3.2em ;
+	width:3.2em ; 
+	float:right;
+	opacity:0.3 ; 
+}
+
+
+#messages div:hover > div {
+	opacity:1;
+}
+
+#messages div div * {
+	margin:0px ;
+	font-size:10px;
+}
+
+
+/* ------------------------------   old style messages CSS */
+
+#friends {
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:10px ; 
+	width:90% ;  
+	margin:auto ; 
+	height:25em ;
+	margin-top:2em ; 
+	background-color:#FFF 	;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#friends:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+
+#friends:hover:before {
+	top : -11em ; 	
+}
+
+#friends div { 
+	margin:auto ; 
+}
+#friends div div {
+	width:6.25em ;
+	height:6.25em ;
+	margin-left:1em ;
+	margin-top:.6em ; 
+	border:1px solid black ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	overflow:hidden ;
+	border-radius:100% ; 
+}
+
+
+#friendsList {
+	margin:auto ;
+	height:1.9em ; 
+	margin-top:62.5em ; 
+	border:1px solid black ; 
+}
+
+
+.panel3 {
+	width:45%	; 
+}
+
+.panel3 > div {
+	width:90%  ; 
+	margin:auto ; 
+	margin-top:2.4em ; 
+	background-color:#FFF ; 
+	border-radius:10px ;
+} 
+
+#menuBar {
+	text-align:right ; 
+	margin-top:2em ;  
+	padding-top:1em ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	height:3% ; 
+	transition: box-shadow 0.5s linear ;
+}
+#menuBar:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#menuBar > span {
+	position:relative ; 
+	margin-right:3em ;
+	margin-left:3em ;
+	font-family:"B Homa" ;
+	color:#486499 ;
+}
+
+.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: .25em; 
+	background: rgba(0,0,0,0.3);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: -1.4em 1.4em;
+	outline: none;
+	color:#000 ; 
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+
+
+#Project {
+	margin-top:2em ; 
+	transition: box-shadow 0.5s linear ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	width:90% ; 
+	height:31.25em ;
+/*	overflow:scroll ; */
+} 
+
+#Project:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+.otherProject {
+	border-bottom:1px solid #CCC ;
+	padding:1em 1em 1em 1em ; 
+}
+.otherProject:hover {
+	background:#edf962 ; 
+}
+
+.ownProject {
+	border-bottom:1px solid #CCC ;
+	padding:1em 1em 1em 1em ; 
+}
+
+.ownProject:hover {
+	background:#ce786f ;  
+}
+
+
+#projectInfo span {
+	margin-left:5em ; 
+}
+
+.progress {
+	height: 1.25em ;
+	background: #ebebeb;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-radius: 10px;
+}
+.progress > span {
+	position: relative;
+	float: left;
+	margin: 0 -1px;
+	min-width: 30px;
+	height: 18px;
+	line-height: 16px;
+	text-align: right;
+	background: #cccccc;
+	border: 1px solid;
+	border-color: #bfbfbf #b3b3b3 #9e9e9e;
+	border-radius: 10px;
+	background-image: linear-gradient(to bottom, #f0f0f0, #dbdbdb 70%, #cccccc);
+	box-shadow: inset 0 1px rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+
+  
+}
+.progress > span > span {
+	margin:auto ; 
+	padding: 0 8px;
+	font-size: 11px;
+	font-weight: bold;
+	color: #404040;
+	color: rgba(0, 0, 0, 0.7);
+	text-shadow: 0 1px rgba(255, 255, 255, 0.4);
+}
+.progress > span:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	height: 18px;
+	background:url(progress.png) 0 0 repeat-x;
+	border-radius: 10px;
+}
+
+.progress .blue {
+	background: #5aaadb;
+	border-color: #459fd6 #3094d2 #277db2;
+	background-image: linear-gradient(to bottom, #aed5ed, #7bbbe2 70%, #5aaadb);
+}
+
+.progress .red {
+	background: #db3a27;
+	border-color: #c73321 #b12d1e #8e2418;
+	background-image: linear-gradient(to bottom, #ea8a7e, #e15a4a 70%, #db3a27);
+}
+
+#Statistics {
+	margin-top:2em ; 
+	padding-top:0.5em ; 
+	transition: box-shadow 0.5s linear ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	width:90% ; 
+	height:35.25em ; 
+} 
+
+
+#Statistics:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+#Statistics button {
+	margin-top:.5em ; 
+	width:30% ; 
+	margin-left:35% ; 
+	font-family:"B Homa" ; 
+	font-size:11px ; 
+	color:#FFF; 
+	background-color:rgba(72,100,147,1) ; 
+	border-radius:10px ;
+	border:3px solid rgba(72,100,147,1) ; 
+}
+
+#Statistics butto:hover {
+	color:rgba(72,100,147,1); 
+	background-color:#FFF ; 
+}
+
+#lineChart {
+	margin-bottom:1em ; 
+	border-bottom:1px dotted #CCCCCC ; 
+	height:45% ; 
+}
+#barChart {
+	border-bottom:1px dotted #CCCCCC ; 
+	height:45% ; 
+}
+
+
+
+
+
+#newProjectPop {
+	z-index:1 ; 
+	display:none ; 
+	width:100% ; 
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	transition: box-shadow 0.5s linear;
+	box-shadow: 0px 0px 10px rgba(72,100,147,1);
+	background-color: white;
+	border: 1px solid black;
+	width: 18em ;
+	height: 13em;
+}
+
+.projectP {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	display:inline-block ; 
+	width:1em ; height:1em ; 
+	border-radius:100% ; 
+	margin-left:2em ;
+}
+
+.projectPClick {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	display:inline-block ; 
+	width:1em ; height:1em ; 
+	border-radius:100% ; 
+	margin-left:2em ;
+	border:1px solid black ; 
+}
+
+.projectP:before {
+	pointer-events: none;
+	position: absolute;
+	z-index: -1;
+	content: '';
+	top: 100%;
+	left: 5%;
+	height: .6em;
+	width: 90%;
+	opacity: 0;
+	background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform, opacity;
+	transition-property: transform, opacity;
+}
+.projectP:hover{
+	-webkit-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+.projectP:hover:before {
+	opacity: 1;
+	-webkit-transform: translateY(5px);
+	transform: translateY(5px);
+}
+
+
+#red { background-color:#a42f2f }
+#yellow { background-color:#FC0 ; } 
+#green { background-color: #147c14 ; } 
+
+#newProjectPop:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#newProjectPop div {
+	margin-left:2em ;
+	margin-bottom:.75em ;
+}
+
+#submitNewProject {
+	width:45% ; 
+	margin:auto ; 
+	color:#FFF; 
+	background-color:rgba(72,100,147,1) ; 
+	border-radius:10px ;
+	border:3px solid rgba(72,100,147,1) ; 	
+}
+
+#submitNewProject:hover {
+	color:rgba(72,100,147,1); 
+	background-color:#FFF ; 
+}
+
+#exitNewProject {
+	width:40% ; 
+	margin:auto ; 
+	color:#FFF; 
+	background-color:#a42f2f ; 
+	border-radius:10px ;
+	border:3px solid #a42f2f ; 
+	box-shadow:none ; 	
+}
+
+#exitNewProject:hover {
+	color:#a42f2f; 
+	background-color:#FFF ; 
+
+}
+
+
+.ideaPop {
+	display:none ; 
+	z-index:1 ;  
+	width:100% ; 
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	transition: box-shadow 0.5s linear;
+	box-shadow: 0px 0px 10px rgba(72,100,147,1);
+	background:url(images/bg.png) ; 
+	border: 1px solid black;
+	width: 25em ;
+	height: 21em;
+}
+
+
+.tabs {
+    width:100%;
+    display:inline-block;
+}
+ 
+.tab-links:after {
+	display:block;
+	clear:both;
+}
+ 
+.tab-links li {
+	margin:0px 5px;
+	float:left;
+	list-style:none;
+}
+ 
+.tab-links a {
+	font-family:"B Homa" ;
+	font-size:8px ; 
+	text-decoration:none;
+	padding:9px 15px;
+	display:inline-block;
+	border-radius:3px 3px 0px 0px;
+	background:rgba(72,100,147,1);
+	font-size:16px;
+	font-weight:600;
+	color:#FFF;
+    transition:all linear 0.15s;
+}
+
+.tab-links li a {
+	font-family:"B Homa" ;
+	font-size:11px ;	
+}
+ 
+.tab-links a:hover {
+	background:#a7cce5;   
+}
+ 
+li.active a, li.active a:hover {
+	background:#fff;
+	color:rgba(72,100,147,1);
+}
+ 
+.tab-content {
+	border-top:1px solid rgba(72,100,147,1) ; 
+	height:80% ; 
+	margin-top:-5px ; 
+	padding:15px;
+	border-radius:3px;
+	box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+	background:#fff;
+}
+
+.tab {
+	display:none;
+}
+ 
+.tab.active {
+	display:block;
+}
+
+#tab1 textarea {
+	resize:none ; 
+	text-align:right ; 
+	margin-left:10% ; 
+	font-family:"B Homa" ;
+	font-size:11px ; 
+	width:80% ; 
+	height:10em ; 	
+}
+
+#tab1 button {
+	margin-left:8em ; 	
+}
+
+#tab1 div {
+	margin-left:3em ; 	
+}
+#tab1 * {
+	margin-top:1em ; 	
+}
+
+#submitNewIdea {
+	margin-top:2em ; 
+	width:45% ; 
+	margin:auto ; 
+	color:#FFF; 
+	background-color:rgba(72,100,147,1) ; 
+	border-radius:10px ;
+	border:3px solid rgba(72,100,147,1) ; 	
+}
+
+#submitNewIdea:hover {
+	color:rgba(72,100,147,1); 
+	background-color:#FFF ; 
+}
+
+#exitNewIdea {
+	position:relative ; 
+	top:1em ; 
+	width:45% ; 
+	margin:auto ; 
+	color:#FFF; 
+	background-color:#a42f2f ; 
+	border-radius:10px ;
+	border:3px solid #a42f2f ; 	
+}
+
+#exitNewIdea:hover {
+	color:#a42f2f; 
+	background-color:#FFF ; 
+}
+
+
+#tab2 * { margin:0px ; padding:0px ;} 
+
+#tab2 li p {
+	margin-right:1em ; 
+	font-family:"B Homa" ;
+	font-size:11px ;
+}
+
+.ideaTitle {
+	font-family:"B Homa" ; 	
+}
+
+#tab2 li {
+	width:23em ; 
+	list-style: none; 
+}
+
+#tab2 li h3 {
+	background-color:rgba(72,100,147,1) ;
+}
+
+#tab2 ul {
+	overflow:scroll ; 
+	border:1px solid black ; 	
+}
+
+
+#blackBG {
+	display:none ; 
+	z-index:0 ; 
+	position:absolute;
+	background-color: black;
+	left:0px;
+	opacity:.6;
+	top:0px;
+	width:100%;
+	height:75em ; 
+}
+
+
+
+.messagePop {
+	display:none ; 
+	width:100% ; 
+	position: absolute;
+	top: 30%;
+	left: 40%;
+	transition: box-shadow 0.5s linear;
+	box-shadow: 0px 0px 10px rgba(72,100,147,1);
+	background-color: white;
+	border: 1px solid black;
+	width: 20em ;
+	height: 18em;
+}
+
+.messagePop:hover { box-shadow: 0px 0px 30px rgba(72,100,147,1); } 
+
+.messagePop > div , .messagePop textarea  {
+	margin-top:1em ; 
+	margin-left:2.5em ;
+	resize:none ; 	
+}
+
+#submitNewMessage {
+	display:inline-block ; 
+	margin-left:4em ;  
+	color:#FFF; 
+	background-color:rgba(72,100,147,1) ; 
+	border-radius:10px ;
+	border:3px solid rgba(72,100,147,1) ; 
+}
+
+#submitNewMessage:hover {
+	color:rgba(72,100,147,1); 
+	background-color:#FFF ; 
+}
+
+
+#exitNewMessage {
+	display:inline-block ; 
+	margin-left:10% ; 
+	width:30% ;   
+	color:#FFF; 
+	background-color:#a42f2f ; 
+	border-radius:10px ;
+	border:3px solid #a42f2f ; 
+}
+
+#exitNewMessage:hover {
+	color:#a42f2f; 
+	background-color:#FFF ; 
+}
+
+

@@ -1,0 +1,223 @@
+body {
+	background-color:#414242 ;
+	background-image:url(bg.png) ;
+}
+body p { 
+	font-family:"B Homa" ;
+	font-size:18px ; 
+}
+
+/* ----------------------------------------------------- details pop ---------------------------------------------------- */
+.detailsPop {
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:10px ; 
+	width:60% ;  
+	margin:auto ;
+	margin-top:2em ; 
+	height:45em ;
+	background-color:#FFF ;
+	transition: box-shadow 0.5s linear ;
+	font-family:"B Homa";
+	font-size:13px;
+}
+.detailsPop {
+	box-shadow: 0px 0px 30px rgba(72,100,147,1);	
+}
+/*    ----------- nemidunam chera :( -------------------------- */
+/*.detailsPop div div :hover {
+	border-right:5px solid rgba(72,100,147,1) ; 
+}
+.detailsPop div div  {
+	position:relative ; 
+	margin-left:3em ;
+	margin-top:.5em ; 
+	transition:border-right .1s linear ;  	
+}*/
+/* -------------------------------------------------------------*/
+#right div div:hover {
+	border-right:5px solid rgba(72,100,147,1) ; 
+}
+#right div div {
+	position:relative ; 
+	margin-left:3em ;
+	margin-top:.5em ; 
+	transition:border-right .1s linear ;  	
+}
+#left div div:hover {
+	border-right:5px solid rgba(72,100,147,1) ; 
+}
+#left div div {
+	position:relative ; 
+	margin-left:3em ;
+	margin-top:.5em ; 
+	transition:border-right .1s linear ;  	
+}
+
+/* ------------------------------------------------------tiltle---------------------------------------------------------- */
+#title {
+	background:url(bg2.png);
+	padding-top:1em;
+	height:5%;
+	margin-left:0;
+	color:#FFF;
+	text-align:right ;
+	border-radius:1%;
+	opacity:.92;		
+}
+#det {
+	padding-right:5%;
+}
+/* ----------------------------------------------------- right ----------------------------------------------------------  */
+#right {
+	text-align:right ; 
+	display:inline-block;
+	/*border: 1px solid black ;*/
+	width:48%;
+	height:60%;	
+	margin-top:5% ;
+}
+#right > div {
+	/*margin-left: 10%;*/
+	padding-top : .5em;
+	
+}
+
+#nameBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:35.5%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#lastnameBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:23%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#emailBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:19%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#phoneNumBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:22.5%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;		
+}
+#locationBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:23.5%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;		
+}
+#degreeBD {
+	border:1px solid #CCC;
+	display:inline-block;	
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#fbBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:22%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#googleBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:26.5%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#instaBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:21%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#twitterBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:23.5%;
+	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+
+/*-------------------------------------------------------left ----------------------------------------------------------- */
+#left {
+	text-align:right;
+	display:inline-block;
+	/*border: 1px solid black;*/	
+	width:47%;	
+}
+#left >div {
+	/*margin-left: 10%;*/
+	padding-top : 1em;
+}
+/* ----------------------------------------------------------- Pic Profile -------------------------------------------- */
+#pic {
+	box-shadow:0px 0px 20px rgba(72,100,147,1);
+	width:10em ;
+	height:10em ; 
+	margin:auto ; 
+	border : 1px solid #486499 ; 
+	border-radius:100% ; 	
+	margin-top : .625em ;
+	margin-bottom:21em;
+	overflow:hidden ; 
+}
+
+#pic img { max-height:100% ; max-width:100% ; } 
+/* ---------------------------------------------------------------------------------------------------------------------- */
+/*#name{
+	z-index:2 ; 
+}
+#name::before {
+	z-index:1 ; 
+	content:'' ; 
+	border-radius:3px ; 
+	background-color:#FC9 ; 
+	right:3em ; 
+	position:absolute ;  
+	width:6em ; 
+	height:1.8em ; 
+}*/

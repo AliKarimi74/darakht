@@ -1,0 +1,541 @@
+body { 	
+	background-color:#414242 ;
+	background-image:url(bg.png) ;
+ } 
+ 
+body p , body span , textarea {
+	font-family:"B Homa" ;
+	font-size:12px ;  
+}
+
+a , button :hover { 
+	cursor:pointer ; 
+}
+
+body h5 { 
+	font-family:"B Homa" ;
+	font-size:12px ;
+	color:#486499 ; 
+}
+
+body > div {
+	width:49% ; 
+	border:1px solid white ;
+	height:130em ; 
+	display:inline-block; 
+	overflow:hidden ;
+}
+
+/* ----------------------------------------------------- */ 
+#tree-container {
+	/*overflow:hidden ; */
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ; 
+	width:90% ;  
+	margin:auto ;
+	margin-top:2em ; 
+	height:30em ;
+    padding: 1em ;
+	background-color:#EEEEEE ;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#tree-container:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+.node {
+    cursor: pointer;
+  }
+
+  .overlay{
+      background-color:#EEE;
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:10px; 
+    font-family:sans-serif;
+  }
+   
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+
+
+
+/* -------------------------------------------------------- */
+#lineChart {
+	overflow:hidden ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ;  
+	margin:auto ;
+	margin-top:2em ; 
+	background-color:#FFF ;
+	transition: box-shadow 0.5s linear ;
+	width: 90% ; 
+	height: 25em;
+}
+
+#lineChart:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);	
+}
+
+
+#barChart {
+	overflow:hidden ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ;  
+	margin:auto ;
+	margin-top:2em ; 
+	background-color:#FFF ;
+	transition: box-shadow 0.5s linear ;
+	width: 90% ; 
+	height: 25em;
+}
+
+#barChart:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);	
+}
+
+
+#pieChart {
+	overflow:hidden ;
+    box-shadow:0px 0px 10px rgba(72,100,147,1);
+	background-color:#FFF ;
+	border-radius:5px ;  
+	width: 30% ;
+	height: 9em; 
+	margin: auto;
+    margin-top:2em ;
+    transition: box-shadow 0.5s linear ;
+}
+
+#pieChart:hover {
+    box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+
+/* ----------------------------------------------------- */ 
+
+#projectInfo {
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ; 
+	width:90% ;  
+	margin:auto ;
+	margin-top:2em ; 
+	height:10em ;
+	background-color:#FFF ;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#projectInfo > div { borer :1px solid black ; } 
+
+#projectInfo > div > div {
+	float:right ; 
+	padding: 0 ; 
+	display:block ;
+	width:51% ;
+	height:35% ;  
+}
+
+.projectInfo p {
+	font-size:10px ; 
+	margin-right:1em ; 
+}
+
+
+.projectInfo {
+	float:right ; 
+	margin:.5em ; 
+	display:inline-block ; 
+	border-right :1px solid rgba(0,0,0,.2) ;
+}
+
+.projectInfo * {
+	display:inline-block ; 	
+}
+
+.projectInfo > div {
+	background-color:rgba(72,100,147,.5) ;
+	padding:.2em ;
+	border-radius:.5em ; 	
+}
+
+#projectInfo:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#ptlogo {
+    margin: 1em;
+}
+
+/* ----------------------------------------------------- */ 
+
+#log {
+    box-shadow:0px 0px 10px rgba(72,100,147,1);
+    border-radius:.6em ;
+    width:90% ;
+    margin:auto ;
+    margin-top:2em ;
+    height:10em ;
+    background-color:#FFF ;
+    transition: box-shadow 0.5s linear ;
+}
+
+#log:hover {
+    box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+
+#log span {
+    font-family: "B Homa" ;
+    font-size: 11px ;
+}
+
+#before ,#after ,#line { display: inline-block ; font-size: 7px ;font-family: "B Homa" }
+#before ,#after {
+    width: 40px ;
+    height: 40px ;
+    border-radius: 100%;
+    border: 1px solid rgba(0,0,0,.3);
+}
+#line {
+    width: 100px;
+    border-bottom: 1px solid rgba(0,0,0,.3);
+}
+
+/* ----------------------------------------------------- */ 
+
+
+#menuBar {
+	background-color:#FFF ;
+	padding-top:1em ; 
+	width:90% ; 
+	text-align:right ; 
+	margin:auto ;
+	margin-top:2em ; 
+	border-radius:5px ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	height:2% ; 
+	transition: box-shadow 0.5s linear ;
+}
+#menuBar:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#menuBar > span {
+	position:relative ; 
+	margin-right:3em ;
+	margin-left:3em ;
+	font-family:"B Homa" ;
+	color:#486499 ;
+}
+
+.cl-effect-3 a {
+	padding: 8px 0;
+}
+
+.cl-effect-3 a::after {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: .25em; 
+	background: rgba(0,0,0,0.3);
+	content: '';
+	opacity: 0;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+
+.cl-effect-3 a:hover::after,
+.cl-effect-3 a:focus::after {
+	opacity: 1;
+	-webkit-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	transform: translateY(0px);
+}
+
+
+nav a {
+	position: relative;
+	display: inline-block;
+	margin: -1.4em 1.4em;
+	outline: none;
+	color:#000 ; 
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.35em;
+}
+
+nav a:hover,
+nav a:focus {
+	outline: none;
+}
+
+
+/* ----------------------------------------------------- */ 
+
+
+#projectComment {
+	overflow:scroll ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:.6em ; 
+	width:90% ;  
+	margin:auto ; 
+	height:25em ;
+	margin-top:2em ;  
+	background-color:#FFF ;
+	margin-bottom:1.2em ;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#projectComment:hover:before {
+	top : -1.8em ; 	
+}
+#projectComment:hover {
+	box-shadow:0px 0px 30px rgba(72,100,147,1);	
+}
+
+#projectComment > div {
+	overflow:hidden ; 
+	max-height:4em ; 
+	border-bottom:1px solid #999 ;
+	transition: background-color .2s linear ; 
+}
+
+#projectComment div * {
+	margin:0px ;	
+}
+#projectComment div div img {
+	max-width:100% ; 
+	max-height:100% ; 
+	border-radius:100% ; 
+	margin:auto; 
+}
+
+#projectComment div div {
+	border-radius:100% ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,0.5);	
+	border:1px solid black ; 
+	margin:2px 10px 0px 0px ; 
+	height:3.2em ;
+	width:3.2em ; 
+	float:right;
+	opacity:0.3 ; 
+}
+
+
+#projectComment div:hover > div {
+	opacity:1;
+}
+
+#projectComment div div * {
+	margin:0px ;
+	font-size:10px;
+}
+
+.in {
+	text-align:right ; 
+	font-family:"B Homa" ;
+	font-size:10px ;
+}
+
+
+/* ----------------------------------------------------- */ 
+
+
+#users {
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	border-radius:2% ; 
+	width:90% ;  
+	margin:auto ;
+	margin-top:2em ; 
+	height:20em ;
+	background-color:#FFF ;
+	transition: box-shadow 0.5s linear ; 
+}
+
+#users:hover { box-shadow:0px 0px 30px rgba(72,100,147,1); }
+
+
+.pm {
+	font-size:10px ; margin: .5em 0em 0em .5em ; border:1px solid #CCC ; 
+	border-radius:5px ;
+	width:10em ;
+	height:10em ; 
+	overflow:hidden ;
+	z-index:-1 ;
+	transition:border-color .2s linear ; 	
+}
+
+.userImage {
+	margin-left:2em ; 
+	width:5em ;
+	height:5em ;
+	margin-top:1em ; 
+	border:1px solid black ; 
+	box-shadow:0px 0px 10px rgba(72,100,147,1);
+	overflow:hidden ;
+	border-radius:100% ;
+	
+}
+
+#userInfo {
+	height:100% ; 
+	position:relative ; 
+	top:-10.8em ;
+	text-align:center;
+	transition:all .2s linear ;
+	opacity:0 ; 	
+}
+.pm:hover #userInfo {
+	background-color:rgba(204,204,204,.7) ; 
+	opacity : 1 ; 	
+}
+
+.pm:hover {
+	border-color:#000 ; 	
+}
+
+
+#users div div img { width:100% ; height:100% ; }
+
+
+/* ----------------------------------------------------- */
+
+#update {
+
+    box-shadow:0px 0px 10px rgba(72,100,147,1);
+    border-radius:2% ;
+    width:90% ;
+    margin:auto ;
+    margin-top:2em ;
+    height:15em ;
+    background-color:#FFF ;
+    transition: box-shadow 0.5s linear ;
+}
+
+#update:hover { box-shadow:0px 0px 30px rgba(72,100,147,1); }
+
+#update p {font-size: 18px ; color:#7bbbe2 ; opacity: .4 ; }
+
+#update textarea {
+    resize: none ;
+    width: 90% ;
+    text-align: right ;
+    margin-left: 2em;
+}
+
+#updatecheck { float: right ; text-align: right; margin-right: .5em; }
+#updatecheck > div {
+    display: inline-block;
+}
+
+#update button {
+    position: relative;
+    top: 1em;
+    left: 7em ;
+    width:20% ;
+    color:#FFF;
+    background-color:rgba(72,100,147,1) ;
+    border-radius:10px ;
+    border:3px solid rgba(72,100,147,1) ;
+    font-family: "B Homa";
+}
+
+#update button:hover {
+    color:rgba(72,100,147,1);
+    background-color:#FFF ;
+}
+
+/* ------------------------------------------------------------------------- */
+.messagePop {
+    display:none ;
+    width:100% ;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    transition: box-shadow 0.5s linear;
+    box-shadow: 0px 0px 10px rgba(72,100,147,1);
+    background-color: white;
+    border: 1px solid black;
+    width: 20em ;
+    height: 18em;
+}
+
+.messagePop:hover { box-shadow: 0px 0px 30px rgba(72,100,147,1); }
+
+.messagePop > div , .messagePop textarea  {
+    margin-top:1em ;
+    margin-left:2.5em ;
+    resize:none ;
+}
+
+#submitNewMessage {
+    display:inline-block ;
+    margin-left:4em ;
+    color:#FFF;
+    background-color:rgba(72,100,147,1) ;
+    border-radius:10px ;
+    border:3px solid rgba(72,100,147,1) ;
+}
+
+#submitNewMessage:hover {
+    color:rgba(72,100,147,1);
+    background-color:#FFF ;
+}
+
+
+#exitNewMessage {
+    display:inline-block ;
+    margin-left:10% ;
+    width:30% ;
+    color:#FFF;
+    background-color:#a42f2f ;
+    border-radius:10px ;
+    border:3px solid #a42f2f ;
+}
+
+#exitNewMessage:hover {
+    color:#a42f2f;
+    background-color:#FFF ;
+}
+
+#blackBG {
+    display:none ;
+    z-index:0 ;
+    position:absolute;
+    background-color: black;
+    left:0px;
+    opacity:.6;
+    top:0px;
+    width:100%;
+    height:75em ;
+}

@@ -1,0 +1,10 @@
+{
+    "name" : "Project Name" ,
+    "children" : [
+        {"name": "subproject1" , "children" : [ { "name" : "subtask1"},{ "name" : "subtask2"} ] } ,
+        {"name": "subproject2" } ,
+        {"name": "subproject3" } ,
+        {"name": "subproject4" , "children" : [ { "name" : "subtask3"},{ "name" : "subtask4"} ] } ,
+        {"name": "subproject5" }
+    ]
+}
