@@ -214,6 +214,22 @@ body > div {
     font-size: 11px ;
 }
 
+#log > div > div {
+    margin-right: 2em ;
+    position: relative;
+    left: 5em ;
+    display: inline-block;
+}
+
+.fa-exclamation {
+    color:rgba(72,100,147,1) ;
+}
+
+#log > div {
+    border: 1px solid rgba(0, 0, 0, .3);
+
+}
+
 #before ,#after ,#line { display: inline-block ; font-size: 7px ;font-family: "B Homa" }
 #before ,#after {
     width: 40px ;
@@ -221,12 +237,31 @@ body > div {
     border-radius: 100%;
     border: 1px solid rgba(0,0,0,.3);
 }
+
+
 #line {
     width: 100px;
     border-bottom: 1px solid rgba(0,0,0,.3);
 }
 
-/* ----------------------------------------------------- */ 
+/* ----------------------------------------------------- */
+
+#log {
+    box-shadow:0px 0px 10px rgba(72,100,147,1);
+    border-radius:.6em ;
+    width:90% ;
+    margin:auto ;
+    margin-top:2em ;
+    height:10em ;
+    background-color:#FFF ;
+    transition: box-shadow 0.5s linear ;
+}
+
+#log:hover {
+    box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+/* -------------------------------------------------------- */
 
 
 #menuBar {
