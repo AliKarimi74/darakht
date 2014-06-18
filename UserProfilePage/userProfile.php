@@ -397,6 +397,7 @@ if (isset($last_project_details))
 <!doctype html>
 <html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fa"/>
+<link rel="shortcut icon" type="image/png" href="log.png" />
 
 <head>
 
@@ -587,7 +588,9 @@ if (isset($last_project_details))
 <body>
 <div class="panel1">
 	<div id="info"> 
-    	<div id="pic"> <img src="<?php echo IMG_DIR.$picture; ?>"/> </div>
+    	<div id="pic"> <img src="<?php echo IMG_DIR.$picture; ?>"/> 
+        	<div id="uploadAx">  <input type="file" value="آپلــود عکـس"/><br/> </div>
+        </div>
         <div id="acc" >
         	<h3 align="center" ><a href=""> <?php echo $display_name; ?></a> </h3>
             <p align="right"><?php echo $join_date; ?>  : تاریخ عضویت</p>
