@@ -60,7 +60,7 @@ body > div {
    
   .node text {
     font-size:10px; 
-    font-family:sans-serif;
+    font-family:"B Homa";
   }
    
   .link {
@@ -221,7 +221,7 @@ body > div {
     display: inline-block;
 }
 
-.fa-exclamation {
+.fa-warning {
     color:rgba(72,100,147,1) ;
 }
 
@@ -272,7 +272,7 @@ body > div {
 
 #assign p {font-size: 18px ; color:#7bbbe2 ; opacity: .4 ; }
 #assign button {
-    margin-left: 10em ;
+    margin-right: 10em ;
 }
 
 .fa-arrows-h {
@@ -286,13 +286,16 @@ body > div {
 }
 
 .asigned {
+    padding: 0em 1em 0em 1em ;
+    text-align: center;
     margin: .5em ;
     border: 1px solid rgba(0,0,0,.0);
     transition:border .5s linear ;
     border-radius: 5px ;
     position: relative;
-    left: 5em ;
+
 }
+
 
 .asigned:hover {
     border: 1px solid rgba(0,0,0,.2);

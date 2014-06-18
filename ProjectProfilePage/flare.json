@@ -1,10 +1,14 @@
 {
-    "name" : "بــــنایی" ,
+    "name" : "ساختمـــان" ,
     "children" : [
-        {"name": "subproject1" , "children" : [ { "name" : "subtask1"},{ "name" : "subtask2"} ] } ,
-        {"name": "subproject2" } ,
-        {"name": "subproject3" } ,
-        {"name": "subproject4" , "children" : [ { "name" : "subtask3"},{ "name" : "subtask4"} ] } ,
-        {"name": "subproject5" }
+        {"name": "برق" , "children" : [ { "name" : "سیم کشی"},{ "name" : "تلفن"} ] } ,
+        {"name": "آب" } ,
+        {"name": "گچ کاری" } ,
+        {"name": "فاضلاب" , "children" : [ { "name" : "چاه" , "children" : [ { "name" : "حفر چاه"} , { "name" : "عمق چاه" } ] },{ "name" : "لوله کشی"} ] } ,
+        {"name": "نما" } ,
+        {"name": "نازک کاری"} ,
+        {"name": "سنگ"} ,
+        {"name": "تلفن"} ,
+        {"name": "گاز"}
     ]
 }

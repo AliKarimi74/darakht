@@ -61,8 +61,7 @@ $(document).ready(function(e) {
             ]
         }]
     });
-	alert("dasdas") ;
-	
+
 	 $('#lineChart').highcharts({
         chart: {
             type: 'line' , 
