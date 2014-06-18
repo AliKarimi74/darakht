@@ -126,6 +126,58 @@ if (isset($_POST['ideaSubmit']))
 ?>
 
 <?php
+// new project part
+require_once "../jdf.php";
+
+if (isset($_POST['newProjectSubmit']))
+{
+    $new_project_title = $_POST['projectName'];
+    $new_project_dead_time_day = $_POST['projectDeadTimeDay'];
+    $new_project_dead_time_month = $_POST['projectDeadTimeMonth'];
+    $new_project_dead_time_year = $_POST['projectDeadTimeYear'];
+    if (!empty($new_project_title) && !empty($new_project_dead_time_day) && !empty($new_project_dead_time_month) && !empty($new_project_dead_time_year))
+    {
+        if (jcheckdate($new_project_dead_time_month, $new_project_dead_time_day, $new_project_dead_time_year))
+        {
+            $diff = jmktime(0,0,0,$new_project_dead_time_month, $new_project_dead_time_day, $new_project_dead_time_year) - time();
+            if ($diff > 0)
+            {
+                $dbc = connect_to_database();
+
+                $new_project_title = mysqli_real_escape_string($dbc, trim($new_project_title));
+                $new_project_dead_time_day = mysqli_real_escape_string($dbc, trim($new_project_dead_time_day));
+                $new_project_dead_time_month = mysqli_real_escape_string($dbc, trim($new_project_dead_time_month));
+                $new_project_dead_time_year = mysqli_real_escape_string($dbc, trim($new_project_dead_time_year));
+                $new_project_dead_date = jalali_to_gregorian($new_project_dead_time_year, $new_project_dead_time_month, $new_project_dead_time_day, '-');
+
+                $project_insert_query = "INSERT INTO projects (client_id, admin_id, title, create_date, dead_date, percent) VALUES
+                                                              ('$user_id', '$user_id', '$new_project_title', NOW(), '$new_project_dead_date', 0)";
+                mysqli_query($dbc, $project_insert_query);
+
+                $find_new_project_id_query = "SELECT id FROM projects WHERE title='$new_project_title' ORDER BY id DESC LIMIT 1";
+                $new_project_id = mysqli_fetch_array(mysqli_query($dbc, $find_new_project_id_query))['id'];
+
+                $insert_into_project_user_relation_query = "INSERT INTO project_user_relation (project_id, user_id) VALUES ('$new_project_id', '$user_id')";
+                mysqli_query($dbc, $insert_into_project_user_relation_query);
+
+                $new_goal_insert_query = "INSERT INTO goals (project_id, owner_id, is_root, title, percent, create_date, dead_date) VALUES
+                                                            ('$new_project_id', '$user_id', 1, '$new_project_title', 0, NOW(), '$new_project_dead_date')";
+                mysqli_query($dbc, $new_goal_insert_query);
+
+                disconnect_from_database($dbc);
+            }
+            else $new_project_error_message = "چنین تاریخی در گذشته واقع است";
+        }
+        else $new_project_error_message = "تاریخ وارد شده وجود ندارد";
+    }
+    else $new_project_error_message = "لطفا تمام موارد را وارد کنید";
+}
+
+if (isset($new_project_error_message)) echo $new_project_error_message;
+
+?>
+
+<?php
 // reply message part
 
 if (isset($_POST['replySubmit']))
@@ -875,18 +927,20 @@ disconnect_from_database($dbc);
 
 ?>
 
-
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'].'?id='.$user_id; ?>"
 <div id="newProjectPop"> <br>
-	<div><input type="text"/> <span> نام پروژه </span> </div>
-    <div><input id="newProjectDate" type="text"/> <span> تاریخ اتمام </span> </div>
+	<div><input type="text" name="projectName"/> <span> نام پروژه </span>  </div>
     <div>
-    	<div class="projectP" id="red" > </div><div class="projectP" id="yellow" > </div><div class="projectP" id="green" > </div>
+        <span>سال</span><input type="number" name="projectDeadTimeYear" style="width: 50px;" min="1390" max="1400">
+        <span>ماه</span><input type="number" name="projectDeadTimeMonth" style="width: 40px;" min="1" max="12">
+        <span>روز</span><input type="number" name="projectDeadTimeDay" style="width: 40px;" min="1" max="31">
     </div>
     <div> 
-    	<button id="submitNewProject" type="submit"> <span> ثبــــــت پروژه جدید </span> </button>
-        <button id="exitNewProject" type="submit"> <span> خـــــــروج </span> </button>
+    	<button id="submitNewProject" type="submit" name="newProjectSubmit"> <span> ثبــــــت پروژه جدید </span> </button>
+        <button id="exitNewProject" type="button"> <span> خـــــــروج </span> </button>
     </div>
-</div> 
+</div>
+</form>
 
 <div id="blackBG"> </div> 
 

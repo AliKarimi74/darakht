@@ -2,6 +2,8 @@
 
 require_once('../connection.php');
 
+session_start();
+
 if (isset($_POST['signUpSubmit']))
 {
     $dbc = connect_to_database();
@@ -123,7 +125,296 @@ if (isset($_POST['messageSubmit']))
 <meta charset="utf-8">
 <link type="text/css" rel="stylesheet" href="styleHomePage.css"/>
 <script src="jquery.min.js"></script>
-<script src="sl.js"></script> 
+<script type="text/javascript">
+
+$(document).ready(function(){
+    //------------------------------------------------------scroll---------------------------------------------------
+    $("#purple").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#signupPanel").offset().top
+        }, 2000);});
+    $("#red").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#ContactUsPanel").offset().top
+        }, 2000);});
+
+    $("#grey").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#AppPanel").offset().top
+        }, 2000);});
+    $("#green").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#HowToUsePanel").offset().top
+        }, 2000);});
+    $("#yellow").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#AboutUsPanel").offset().top
+        }, 2000);});
+    $("#blue").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#WhyUsPanel").offset().top
+        }, 2000);});
+
+    $("#GoUp").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $(".mainPanel").offset().top
+        }, 2000);});
+    //------------------------------------------------------scroll toolbar------------------------------------------
+    $("#aboutus").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#AboutUsPanel").offset().top
+        }, 2000);});
+    $("#whyus").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#WhyUsPanel").offset().top
+        }, 2000);});
+    $("#howtouse").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#HowToUsePanel").offset().top
+        }, 2000);});
+    $("#app").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#AppPanel").offset().top
+        }, 2000);});
+    $("#sign").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#signupPanel").offset().top
+        }, 2000);});
+    $("#contactus").click(function (){
+
+        $('html, body').animate({
+            scrollTop: $("#ContactUsPanel").offset().top
+        }, 2000);});
+    //-------------------------------------------------------hiding toolbar------------------------------------------
+    idleTime = 0;
+
+    //Increment the idle time counter every second.
+    var idleInterval = setInterval(timerIncrement, 1000);
+
+    function timerIncrement()
+    {
+        idleTime++;
+        if (idleTime > 2)
+        { clearInterval()
+            doPreload(idleInterval);
+        }
+    }
+
+    //Zero the idle timer on mouse movement.
+    $(this).mousemove(function(e){
+        idleTime = 0;
+        $(".toolbar").slideDown();
+    });
+    $(this).keypress(function (e) {
+        idleTime = 0;
+        $(".toolbar").slideDown();
+    });
+
+    function doPreload()
+    { if(document.body.scrollTop>700)
+        $(".toolbar").slideUp();
+    }
+
+    //---------------------------------------------------login-----------------------------------
+    $("#pop").hide();
+
+    $("#forget").click(function(){
+        $("#mail").val("");
+        $("#msg").text("");
+        $('#forgetPop').slideDown(500) ;
+        $('#blackBG').show(500) ;});
+
+    $('#exitForget').click(function(e) {
+        $('#forgetPop').slideUp(500) ;
+        $('#blackBG').hide(500) ;
+    });
+    $('#submitForget').click(function(e) {
+        if($("#mail").val()!=""){
+            $('#forgetPop').slideUp(500) ;
+            $('#blackBG').hide(500) ;}
+        else{
+            $("#msg").text(".ایمیل خود را وارد کنید"); }
+    });
+
+
+    $("#btn").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#login").click(function(){
+        $("#pop").slideDown()
+    });
+    $(".mainPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#AboutUsPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#WhyUsPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#HowTousePanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#AppPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#signupPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#ContactUsPanel").click(function(){
+        $("#pop").slideUp();
+    });
+    $("#yek").click(function(){
+        $("#pop").slideUp();
+    });
+    //---------------------------------------------------slide show-------------------------------------------
+    var list=["first.jpg","1.jpg","2.jpg","4.jpg","5.jpg"];
+    var size=5;
+    var i=0;
+    //$("#ax2").src = "3.jpg";
+    $("#ax").attr('src', list[i]);i++;
+    $("#ax").attr('width', '100%');
+    $("#ax2").attr('src', list[i]);i++;
+    $("#ax2").attr('width', '100%');
+
+    setInterval(function(){
+        setTimeout(function(){      //jam ax
+            $("#ax").animate({width:'toggle'},1000);
+        },2000);
+        setTimeout(function(){
+            $("#ax2").css('z-index' , '0');
+            $("#ax").css('z-index' , '-1');
+            $("#ax").attr('src', list[i]);   //tavize ax
+            $("#ax").attr('width', '100%');
+            i++;
+            if(i>=size)i=0;
+        },3000);
+        setTimeout(function(){      //pakhsh ax(hidden)
+            $("#ax").animate({width:'toggle'},10);
+        },4000);
+        setTimeout(function(){         //jam ax2
+            $("#ax2").animate({width:'toggle'},1000);
+        },5000);
+        setTimeout(function(){
+            $("#ax2").css('z-index' , '-1');
+            $("#ax").css('z-index' , '0');
+            $("#ax2").attr('src', list[i]);   //tavize ax2
+            $("#ax2").attr('width', '100%');
+            i++;
+            if(i>=size)i=0;
+        },6000);
+        setTimeout(function(){           //pakhsh ax2(hidden)
+            $("#ax2").animate({width:'toggle'},10);
+        },6500);
+
+
+    },7000);
+
+//-----------------------------------------------App SlideShow---------------------------------------------------
+
+    var list2=["10.jpg","11.jpg","12.jpg","14.jpg","15.jpg","16.png"];
+    var size2=6;
+    var j=0;
+    //$("#ax2").src = "3.jpg";
+    $("#ax_1").attr('src', list2[j]);j++;
+    $("#ax_1").attr('width', '100%');
+    $("#ax_2").attr('src', list2[j]);j++;
+    $("#ax_2").attr('width', '100%');
+
+    setInterval(function(){
+        setTimeout(function(){      //jam ax
+            $("#ax_1").animate({width:'toggle'},1000);
+        },2000);
+        setTimeout(function(){
+            $("#ax_2").css('z-index' , '0');
+            $("#ax_1").css('z-index' , '-1');
+            $("#ax_1").attr('src', list2[j]);   //tavize ax
+            $("#ax_1").attr('width', '100%');
+            j++;
+            if(j>=size2)j=0;
+        },3000);
+        setTimeout(function(){      //pakhsh ax(hidden)
+            $("#ax_1").animate({width:'toggle'},10);
+        },4000);
+        setTimeout(function(){         //jam ax2
+            $("#ax_2").animate({width:'toggle'},1000);
+        },5000);
+        setTimeout(function(){
+            $("#ax_2").css('z-index' , '-1');
+            $("#ax_1").css('z-index' , '0');
+            $("#ax_2").attr('src', list2[j]);   //tavize ax2
+            $("#ax_2").attr('width', '100%');
+            j++;
+            if(j>=size2)j=0;
+        },6000);
+        setTimeout(function(){           //pakhsh ax2(hidden)
+            $("#ax_2").animate({width:'toggle'},10);
+        },6500);
+
+
+    },7000);
+
+//-----------------------------------disa :D ---------------------------
+    $(window).scroll(function(){
+        if(document.body.scrollTop<700){
+            $("#aboutus").hide();}
+        if(document.body.scrollTop>700){
+            $("#aboutus").show();}
+
+        if(document.body.scrollTop<700){
+            $("#whyus").hide();}
+        if(document.body.scrollTop>700){
+            $("#whyus").show();}
+
+        if(document.body.scrollTop<700){
+            $("#howtouse").hide();}
+        if(document.body.scrollTop>700){
+            $("#howtouse").show();}
+
+        if(document.body.scrollTop<700){
+            $("#app").hide();}
+        if(document.body.scrollTop>700){
+            $("#app").show();}
+
+        if(document.body.scrollTop<700){
+            $("#sign").hide();}
+        if(document.body.scrollTop>700){
+            $("#sign").show();}
+
+        if(document.body.scrollTop<700){
+            $("#contactus").hide();}
+        if(document.body.scrollTop>700){
+            $("#contactus").show();}
+
+
+    })
+
+
+    //----------------------Excess--------------
+
+    $("#first").click(function (){
+        $('#excessPop').slideDown(500) ;
+        $('#blackBG').show(500) ;});
+
+    $('#submitExcess').click(function(e) {
+        $('#excessPop').slideUp(500) ;
+        $('#blackBG').hide(500) ;
+    });
+});
+
+</script>
 <title>ProjecTree</title>
 </head>
 
@@ -137,7 +428,6 @@ if (isset($_POST['messageSubmit']))
     </div>
 
 <?php
-session_start();
 $userIsLogIn = false;
 if (isset($_SESSION['user_id'])) // || isset($_COOKIE['user_id']))
 {
@@ -174,9 +464,23 @@ $firstButtonName = "ورود به سایـــت";
         <input type="password" name="logInPassword" placeholder="رمــز عبور "/>
         <label><?php if (isset($logIn_error_msg)) echo '<p class="error">'.$logIn_error_msg.'</p>'; ?></label>
         <div id="register">
+            <span id="forget" style="margin-right:7%"> .رمز عبور خود را فراموش کرده ام</span>
             <button type="submit" name="logInSubmit"> ورود </button>
         </div> <!-- end of register -->
     </form>
+
+    <div id="blackBG">
+    </div>   <!-- end of blackBG -->
+    <div id="forgetPop">
+        <span style="text-align:right ; margin-left:45%">ارسال مجدد کلمه ی عبور</span> <br/> <br/>
+        <input id="mail" type="email"  placeholder="ایــمیـل" style=" margin-left:40% ; text-align:right" />
+        <span id="msg" style="margin-left:45%"></span>
+        <div id="btnForget" style="margin-left:10%">
+            <button id="exitForget"> خروج </button>
+            <button id="submitForget"> تایید </button>
+        </div>
+    </div>
+
 </div>
 <?php
 }
@@ -329,6 +633,7 @@ $firstButtonName = "ورود به سایـــت";
 
     </div>  <!--end of SocialNetworks -->
     <div id="AH">
+        <button id="first">innnn</button>
 	<div id="ContactTitle" >ارســـال پـیـام</div>
 	<div id="ContactSend">
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -363,7 +668,13 @@ $firstButtonName = "ورود به سایـــت";
             <!--</div>--> <!-- end of submit -->
         </form>
     </div> <!-- end of AH -->
-    </div>  <!-- end of ContactSend -->
+</div>  <!-- end of ContactSend -->
+
+    <!-- ----------------------ExcessServer-->
+    <div id="excessPop">
+        <span id="excessmsg" >متن پیام سرور</span><br/>
+        <button id="submitExcess">تایید</button>
+    </div>
     
     
     <!-- ---------------------------------ContactUs Slideshow------------------------- -->
