@@ -125,8 +125,8 @@ body > div {
     box-shadow:0px 0px 10px rgba(72,100,147,1);
 	background-color:#FFF ;
 	border-radius:5px ;  
-	width: 30% ;
-	height: 9em; 
+	width: 50% ;
+	height: 12em;
 	margin: auto;
     margin-top:2em ;
     transition: box-shadow 0.5s linear ;
@@ -199,7 +199,7 @@ body > div {
     width:90% ;
     margin:auto ;
     margin-top:2em ;
-    height:10em ;
+    height:20em ;
     background-color:#FFF ;
     transition: box-shadow 0.5s linear ;
 }
@@ -246,19 +246,55 @@ body > div {
 
 /* ----------------------------------------------------- */
 
-#log {
+#assign {
     box-shadow:0px 0px 10px rgba(72,100,147,1);
     border-radius:.6em ;
     width:90% ;
     margin:auto ;
     margin-top:2em ;
-    height:10em ;
+    height:20em ;
     background-color:#FFF ;
     transition: box-shadow 0.5s linear ;
+    overflow: scroll;
 }
 
-#log:hover {
+#assign:hover {
     box-shadow:0px 0px 30px rgba(72,100,147,1);
+}
+
+#assign > div {
+    margin-left: .5em ;
+    text-align: right;
+    display: inline-block;
+    width: 30% ;
+}
+
+#assign p {font-size: 18px ; color:#7bbbe2 ; opacity: .4 ; }
+#assign button {
+    margin-left: 10em ;
+}
+
+.fa-arrows-h {
+    position: relative;
+    top: .25em ;
+}
+
+#assign hr {
+    margin-top: 2em ;
+    color:rgba(72,100,147,1) ;
+}
+
+.asigned {
+    margin: .5em ;
+    border: 1px solid rgba(0,0,0,.0);
+    transition:border .5s linear ;
+    border-radius: 5px ;
+    position: relative;
+    left: 5em ;
+}
+
+.asigned:hover {
+    border: 1px solid rgba(0,0,0,.2);
 }
 
 /* -------------------------------------------------------- */
@@ -493,7 +529,7 @@ nav a:focus {
     display: inline-block;
 }
 
-#update button {
+#update button , #assign button {
     position: relative;
     top: 1em;
     left: 7em ;
@@ -505,7 +541,7 @@ nav a:focus {
     font-family: "B Homa";
 }
 
-#update button:hover {
+#update button:hover , #assign button:hover {
     color:rgba(72,100,147,1);
     background-color:#FFF ;
 }

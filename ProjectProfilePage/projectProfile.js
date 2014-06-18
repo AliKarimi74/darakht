@@ -19,13 +19,6 @@ $(document).ready(function(e) {
         $('#blackBG').hide(500) ;
     });
 
-
-    var source = [
-        "Instant coffee",
-        "Irish coffee",
-        "Liqueur coffee"
-    ];
-    $("#combo").jqxComboBox({ source: source, width: '200px', height: '25px',});
 	 
 	 $('#pieChart').highcharts({
         chart: {
@@ -35,8 +28,8 @@ $(document).ready(function(e) {
 			style: { fontFamily : 'B Homa' ,  
 					 fontSize : '5px' 
 			       },
-			marginLeft : 10,
-			marginTop : -10 ,  
+			//marginLeft : 10,
+			//marginTop : -10 ,
 
         },
         title: { 
@@ -68,7 +61,7 @@ $(document).ready(function(e) {
             ]
         }]
     });
-	
+	alert("dasdas") ;
 	
 	 $('#lineChart').highcharts({
         chart: {
