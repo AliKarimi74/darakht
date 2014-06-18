@@ -87,6 +87,24 @@ if (isset($_POST['friendRequestSubmit']))
 }
 ?>
 
+<?php
+// send message part
+
+if (isset($_POST['messageSubmit']))
+{
+    $dbc = connect_to_database();
+
+    $sender_id = $_SESSION['user_id'];
+    $send_message_title = mysqli_real_escape_string($dbc, trim($_POST['messageTitle']));
+    $send_message_content = mysqli_real_escape_string($dbc, trim($_POST['messageContent']));
+
+    $insert_new_message_query = "INSERT INTO message (sender_id, receipt_id, time, title, message) VALUES ('$sender_id', '$user_id', NOW(), '$send_message_title', '$send_message_content')";
+    mysqli_query($dbc, $insert_new_message_query);
+
+    disconnect_from_database($dbc);
+}
+?>
+
 
 <?php
 // projects information
@@ -579,7 +597,7 @@ disconnect_from_database($dbc);
             <?php if (!$is_friend_with_me) { ?>
                 <button id="addFriend" type="submit" name="friendRequestSubmit">اضافـــه کردن به لیست دوستان</button>
             <?php } ?>
-            <button id="sendMessage" >ارسال پیـــــــــــــــام</button>
+            <button id="sendMessage" type="button" >ارسال پیـــــــــــــــام</button>
         </div>
         </form>
     </div> <!--end of info -->
@@ -711,17 +729,17 @@ disconnect_from_database($dbc);
 </div>
 
 
-<div id="blackBG"> </div> 
+<div id="blackBG"> </div>
 
-
+<form method="post" action="<?php echo $_SERVER['PHP_SELF'].'?id='.$user_id; ?>"
 <div class="messagePop" >
-	<div><input type="text"/> <span> عنــــــوان </span> </div>        	
-    <textarea rows="10" cols="30" ></textarea>
-    <button id="submitNewMessage"> <span> ارسال پیــــــــام  </span> </button>
-    <button id="exitNewMessage"> <span> خــــــروج  </span> </button>
+    <div><input type="text" name="messageTitle"/> <span> عنــــــوان </span> </div>
+    <textarea rows="10" cols="30" name="messageContent"></textarea>
+    <button id="submitNewMessage" type="submit" name="messageSubmit"> <span> ارسال پیــــــــام  </span> </button>
+    <button id="exitNewMessage" type="button"> <span> خــــــروج  </span> </button>
 </div>
-    
-    
+</form>
+
     
     
     

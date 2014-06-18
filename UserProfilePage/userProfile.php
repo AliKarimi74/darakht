@@ -922,14 +922,6 @@ disconnect_from_database($dbc);
                         echo '</li>';
                     }
                 }?>
-            	<li> 
-                	<h3 class="ideaTitle" align="right"> عنوان ایده اول </h3>	
-                    <p align="right"> تسیباشسنیبلسمینابلشسیبانکتیاب </p>
-                </li>
-                <li class="activeIdea"> 
-                	<h3 class="ideaTitle" align="right"> عنوان ایده دوم </h3>	
-                    <p align="right"> تسیباشسنیبلسمینابلشسیبانکتیاب </p>
-                </li>
             </ul>
         </div>
     </div>
