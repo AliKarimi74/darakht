@@ -1,6 +1,8 @@
 <?php
 //sign up
 
+require_once('../connection.php');
+
 $dbc = connect_to_database();
 
 $response = array();
