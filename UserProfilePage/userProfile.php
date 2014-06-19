@@ -826,7 +826,7 @@ disconnect_from_database($dbc);
 <div class="panel3"> 
 	<div id="menuBar" style="display:block">
     	<nav class="cl-effect-3"> 
-    		<a href="../logOut.php"><span id="exit" > خـــروج </span></a><a href="#"><span id="newProject"> پــــــروژه جدید </span></a> <a href="#"><span id="setting">تنظیمات کــاربـــر </span></a> <a href="<?php echo 'details.php?id='.$user_id; ?>"><span>مشـــــخصات کامل  </span></a>  <a href="#"><span id="idea"> ایـــــده </span></a>
+    		<a href="../logOut.php"><span id="exit" > خـــروج </span></a><a href="#"><span id="back"> صفحـه اصـلی </span></a><a href="#"><span id="newProject"> پــــــروژه جدید </span></a> <a href="#"><span id="setting">تنظیمات کــاربـــر </span></a> <a href="<?php echo 'details.php?id='.$user_id; ?>"><span>مشـــــخصات کامل  </span></a>  <a href="#"><span id="idea"> ایـــــده </span></a>
 		</nav>
     </div> 
     
@@ -998,6 +998,10 @@ disconnect_from_database($dbc);
 <div class="settingPop">
     <div > <input type="text" name="editFName" value="<?php echo $first_name; ?>"/> <span> نام </span> </div>
     <div > <input type="text" name="editLName" value="<?php echo $last_name; ?>"/> <span> نام خانوادگی </span> </div>
+    <div > <input type="text"/> <span> تاریـخ تولـد </span> </div>
+    <div > <input type="text"/> <span> جنسـیت </span> </div>   
+    <div > <input type="text"/> <span> میـزان تحصـیلات</span> </div>
+    <div > <input type="text"/> <span> حـوزه فعــالیت</span> </div>
     <div > <input type="email" name="editEmail" value="<?php echo $email; ?>"/> <span> پست الکتـــرونیک </span> </div>
     <div > <input type="text" name="editPhoneNumber" value="<?php echo $phone_number; ?>"/> <span> شماره تلفـــن </span> </div>
     <div > <input type="text" name="editLocation" value="<?php echo $location; ?>"/> <span> شهر / استـــان </span> </div>
@@ -1005,7 +1009,9 @@ disconnect_from_database($dbc);
     <div > <input type="url" name="editGoogleURL" value="<?php echo $google_profile; ?>"/> <span> گوگـــل </span> </div>
     <div > <input type="url" name="editInstagramURL" value="<?php echo $instagram_profile; ?>"/> <span> اینستاگــــرام </span> </div>
     <div > <input type="url" name="editLinkedInURL" value="<?php echo $linkin_profile; ?>"/> <span> لینکد این</span> </div>
+    <br/>
     <?php if(isset($edit_error_message)) echo '<p>'.$edit_error_message.'</p>'; ?>
+    <div > <input type="checkbox" id="no" /> <span>  خیــر</span> <span style="margin-left:10% ; display:inline-block"> :مشاهده لیسـت دوسـتان توسط دیـگران  </span> </div>
     <button id="saveSetting" type="submit" name="editProfileSubmit"> <span> ثبــــــت متن جدیـــد </span> </button>
     <button id="exitSetting" type="button"> <span>خـــــــــــــــــــروج  </span> </button>
 </div>
