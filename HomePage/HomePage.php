@@ -404,15 +404,24 @@ $(document).ready(function(){
 
     //----------------------Excess--------------
 
-    $("#first").click(function (){
-        $('#excessPop').slideDown(500) ;
-        $('#blackBG').show(500) ;});
-
-    $('#submitExcess').click(function(e) {
-        $('#excessPop').slideUp(500) ;
-        $('#blackBG').hide(500) ;
-    });
+		setInterval(function(){if(ptag==2){
+				$('#excessPop').slideDown(500) ; 
+				$('#blackBG').show(500) ;ptag=0;}},200);
+		$("#first").click(function (){
+				$('#excessPop').slideDown(500) ; 
+				$('#blackBG').show(500) ;});
+		
+		$('#submitExcess').click(function(e) {
+				$('#excessPop').slideUp(500) ;
+				$('#blackBG').hide(500) ; 
+				 });
 });
+
+
+
+
+var ptag=2;
+
 
 </script>
 <title>ProjecTree</title>
@@ -468,20 +477,19 @@ $firstButtonName = "ورود به سایـــت";
             <button type="submit" name="logInSubmit"> ورود </button>
         </div> <!-- end of register -->
     </form>
+</div>   <!-- end of pop-->
+<div id="blackBG">
+</div>   <!-- end of blackBG -->
+<div id="forgetPop">
+     <span style="text-align:right ; margin-left:45%">ارسال مجدد کلمه ی عبور</span> <br/> <br/>
+     <input id="mail" type="email"  placeholder="ایــمیـل" style=" margin-left:40% ; text-align:right" />
+     <span id="msg" style="margin-left:45%"></span>
+     <div id="btnForget" style="margin-left:10%">
+          <button id="exitForget"> خروج </button>
+          <button id="submitForget"> تایید </button>
+     </div>   <!-- end of btnForget -->
+</div>    <!-- end of forgetPop -->
 
-    <div id="blackBG">
-    </div>   <!-- end of blackBG -->
-    <div id="forgetPop">
-        <span style="text-align:right ; margin-left:45%">ارسال مجدد کلمه ی عبور</span> <br/> <br/>
-        <input id="mail" type="email"  placeholder="ایــمیـل" style=" margin-left:40% ; text-align:right" />
-        <span id="msg" style="margin-left:45%"></span>
-        <div id="btnForget" style="margin-left:10%">
-            <button id="exitForget"> خروج </button>
-            <button id="submitForget"> تایید </button>
-        </div>
-    </div>
-
-</div>
 <?php
 }
 ?>
@@ -633,7 +641,7 @@ $firstButtonName = "ورود به سایـــت";
 
     </div>  <!--end of SocialNetworks -->
     <div id="AH">
-        <button id="first">innnn</button>
+       <!-- <button id="first">innnn</button>-->
 	<div id="ContactTitle" >ارســـال پـیـام</div>
 	<div id="ContactSend">
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
@@ -675,14 +683,6 @@ $firstButtonName = "ورود به سایـــت";
         <span id="excessmsg" >متن پیام سرور</span><br/>
         <button id="submitExcess">تایید</button>
     </div>
-    
-    
-    <!-- ---------------------------------ContactUs Slideshow------------------------- -->
-	<!--<div id="do">
-        <img id="ax_1" />
-        <img id="ax_2" />
- 
-    </div>-->
     
 </div>  <!-- end of ContactUsPanel -->
 </body>

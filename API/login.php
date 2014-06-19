@@ -22,7 +22,7 @@ if (mysqli_num_rows($data) == 1) {
         //setcookie('user_id', $row['user_id'], time() + (60 * 60 * 24 * 30));    // expires in 30 days
         //setcookie('username', $row['username'], time() + (60 * 60 * 24 * 30));  // expires in 30 days
         $response['success'] = 0;
-        $response['message'] = "ok";
+        $response['message'] = $userID;
 }
 else {
         $response['success'] = 1;

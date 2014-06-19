@@ -8,6 +8,14 @@ $(document).ready(function(e) {
 	m.slideDown();
      });
 
+
+    var availableTags = ["kian.peymani@gmail.com" ] ;
+
+    $("#email").autocomplete({
+        source : availableTags
+    }) ;
+
+
     $('#blackBG').hide(0) ;
     $('#submitNewPm').click(function(e) {
         $('.messagePop').slideDown(500) ;
@@ -55,9 +63,9 @@ $(document).ready(function(e) {
             type: 'pie',
             name: 'Project',
             data: [
-                ['Done',   45.0],
-                ['Doing',       26.8],
-				['ToDo' , 28] 
+                ['Doing',   45.0],
+                ['ToDo',       26.8],
+				['Done' , 28]
             ]
         }]
     });
@@ -135,13 +143,13 @@ $(document).ready(function(e) {
                 }
             },
             series: [{
-                name: 'Done',
+                name: 'Doing',
                 data: [5, 3, 4, 7, 2]
             }, {
-                name: 'Doing',
+                name: 'ToDo',
                 data: [2, 2, 3, 2, 1]
             }, {
-                name: 'ToDo',
+                name: 'Done',
                 data: [3, 4, 4, 2, 5]
             }]
         });
