@@ -468,20 +468,19 @@ $firstButtonName = "ورود به سایـــت";
             <button type="submit" name="logInSubmit"> ورود </button>
         </div> <!-- end of register -->
     </form>
+</div>   <!-- end of pop-->
+<div id="blackBG">
+</div>   <!-- end of blackBG -->
+<div id="forgetPop">
+     <span style="text-align:right ; margin-left:45%">ارسال مجدد کلمه ی عبور</span> <br/> <br/>
+     <input id="mail" type="email"  placeholder="ایــمیـل" style=" margin-left:40% ; text-align:right" />
+     <span id="msg" style="margin-left:45%"></span>
+     <div id="btnForget" style="margin-left:10%">
+          <button id="exitForget"> خروج </button>
+          <button id="submitForget"> تایید </button>
+     </div>   <!-- end of btnForget -->
+</div>    <!-- end of forgetPop -->
 
-    <div id="blackBG">
-    </div>   <!-- end of blackBG -->
-    <div id="forgetPop">
-        <span style="text-align:right ; margin-left:45%">ارسال مجدد کلمه ی عبور</span> <br/> <br/>
-        <input id="mail" type="email"  placeholder="ایــمیـل" style=" margin-left:40% ; text-align:right" />
-        <span id="msg" style="margin-left:45%"></span>
-        <div id="btnForget" style="margin-left:10%">
-            <button id="exitForget"> خروج </button>
-            <button id="submitForget"> تایید </button>
-        </div>
-    </div>
-
-</div>
 <?php
 }
 ?>
@@ -675,14 +674,6 @@ $firstButtonName = "ورود به سایـــت";
         <span id="excessmsg" >متن پیام سرور</span><br/>
         <button id="submitExcess">تایید</button>
     </div>
-    
-    
-    <!-- ---------------------------------ContactUs Slideshow------------------------- -->
-	<!--<div id="do">
-        <img id="ax_1" />
-        <img id="ax_2" />
- 
-    </div>-->
     
 </div>  <!-- end of ContactUsPanel -->
 </body>
