@@ -23,7 +23,6 @@ body p {
 .detailsPop {
 	box-shadow: 0px 0px 30px rgba(72,100,147,1);	
 }
-
 /* -------------------------------------------------------------*/
 #right div div:hover {
 	border-right:5px solid rgba(72,100,147,1) ; 
@@ -43,10 +42,9 @@ body p {
 	margin-top:.5em ; 
 	transition:border-right .1s linear ;  	
 }
-
 /* ------------------------------------------------------tiltle---------------------------------------------------------- */
 #title {
-	background:url(bg2.png);
+	background:url(images/bg2.png);
 	padding-top:1em;
 	height:5%;
 	margin-left:0;
@@ -82,7 +80,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:35.5%;
-	background:url(bg3.png);	
+	background:url(images/bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -92,7 +90,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:23%;
-	background:url(bg3.png);
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -102,7 +100,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:25.5%;
-	background:url(bg3.png);	
+	background:url(images/bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -112,7 +110,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:29%;
-	background:url(bg3.png);	
+	background:url(images/bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -122,7 +120,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:19%;
-	background:url(bg3.png);	
+	background:url(images/bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -132,7 +130,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:21%;
-	background:url(bg3.png);	
+	background:url(images/bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -142,7 +140,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:19%;
-	background:url(bg3.png);
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -152,7 +150,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:22.5%;
-	background:url(bg3.png);
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -162,7 +160,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:23.5%;
-	background:url(bg3.png);
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -171,17 +169,18 @@ body p {
 #degreeBD {
 	border:1px solid #CCC;
 	display:inline-block;	
-	background:url(bg3.png);
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
 	padding-left:.5em;	
 }
+/* ------------------------------------------------- */
 #fbBD {
 	border:1px solid #CCC;
 	display:inline-block;
-	margin-right:22%;
-	background:url(bg3.png);
+	margin-right:2%;
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -190,8 +189,8 @@ body p {
 #googleBD {
 	border:1px solid #CCC;
 	display:inline-block;
-	margin-right:26.5%;
-	background:url(bg3.png);
+	margin-right:6.5%;
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -200,8 +199,8 @@ body p {
 #instaBD {
 	border:1px solid #CCC;
 	display:inline-block;
-	margin-right:21%;
-	background:url(bg3.png);
+	margin-right:1%;
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -210,14 +209,13 @@ body p {
 #linkedinBD {
 	border:1px solid #CCC;
 	display:inline-block;
-	margin-right:23.5%;
-	background:url(bg3.png);
+	margin-right:3.5%;
+	background:url(images/bg3.png);
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
 	padding-left:.5em;	
 }
-
 /*-------------------------------------------------------left ----------------------------------------------------------- */
 #left {
 	text-align:right;
@@ -244,4 +242,3 @@ body p {
 }
 
 #pic img { max-height:100% ; max-width:100% ; } 
-
