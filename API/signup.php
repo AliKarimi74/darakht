@@ -35,7 +35,7 @@ else
     $_SESSION['user_id'] = $userID;
 
     $response['success'] = 0;
-    $response['message'] = "ok";
+    $response['message'] = $userID;
 }
 
 disconnect_from_database($dbc);
