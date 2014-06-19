@@ -404,15 +404,24 @@ $(document).ready(function(){
 
     //----------------------Excess--------------
 
-    $("#first").click(function (){
-        $('#excessPop').slideDown(500) ;
-        $('#blackBG').show(500) ;});
-
-    $('#submitExcess').click(function(e) {
-        $('#excessPop').slideUp(500) ;
-        $('#blackBG').hide(500) ;
-    });
+		setInterval(function(){if(ptag==2){
+				$('#excessPop').slideDown(500) ; 
+				$('#blackBG').show(500) ;ptag=0;}},200);
+		$("#first").click(function (){
+				$('#excessPop').slideDown(500) ; 
+				$('#blackBG').show(500) ;});
+		
+		$('#submitExcess').click(function(e) {
+				$('#excessPop').slideUp(500) ;
+				$('#blackBG').hide(500) ; 
+				 });
 });
+
+
+
+
+var ptag=2;
+
 
 </script>
 <title>ProjecTree</title>
@@ -632,7 +641,7 @@ $firstButtonName = "ورود به سایـــت";
 
     </div>  <!--end of SocialNetworks -->
     <div id="AH">
-        <button id="first">innnn</button>
+       <!-- <button id="first">innnn</button>-->
 	<div id="ContactTitle" >ارســـال پـیـام</div>
 	<div id="ContactSend">
         <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
