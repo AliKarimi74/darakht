@@ -1,6 +1,6 @@
 body {
 	background-color:#414242 ;
-	background-image:url(bg.png) ;
+	background-image:url(bg.png)
 }
 body p { 
 	font-family:"B Homa" ;
@@ -23,16 +23,7 @@ body p {
 .detailsPop {
 	box-shadow: 0px 0px 30px rgba(72,100,147,1);	
 }
-/*    ----------- nemidunam chera :( -------------------------- */
-/*.detailsPop div div :hover {
-	border-right:5px solid rgba(72,100,147,1) ; 
-}
-.detailsPop div div  {
-	position:relative ; 
-	margin-left:3em ;
-	margin-top:.5em ; 
-	transition:border-right .1s linear ;  	
-}*/
+
 /* -------------------------------------------------------------*/
 #right div div:hover {
 	border-right:5px solid rgba(72,100,147,1) ; 
@@ -67,6 +58,11 @@ body p {
 #det {
 	padding-right:5%;
 }
+#back {
+	float:left;
+	padding-left:5%;
+	cursor:pointer;
+}
 /* ----------------------------------------------------- right ----------------------------------------------------------  */
 #right {
 	text-align:right ; 
@@ -86,7 +82,7 @@ body p {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:35.5%;
-	background:url(bg3.png);
+	background:url(bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -97,6 +93,46 @@ body p {
 	display:inline-block;
 	margin-right:23%;
 	background:url(bg3.png);
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#birthBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:25.5%;
+	background:url(bg3.png);	
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#genderBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:29%;
+	background:url(bg3.png);	
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#degreeBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:19%;
+	background:url(bg3.png);	
+	border-radius:.25em;
+	padding:.2em;
+	padding-right:.5em;
+	padding-left:.5em;	
+}
+#zoneBD {
+	border:1px solid #CCC;
+	display:inline-block;
+	margin-right:21%;
+	background:url(bg3.png);	
 	border-radius:.25em;
 	padding:.2em;
 	padding-right:.5em;
@@ -171,7 +207,7 @@ body p {
 	padding-right:.5em;
 	padding-left:.5em;	
 }
-#twitterBD {
+#linkedinBD {
 	border:1px solid #CCC;
 	display:inline-block;
 	margin-right:23.5%;
@@ -201,23 +237,11 @@ body p {
 	margin:auto ; 
 	border : 1px solid #486499 ; 
 	border-radius:100% ; 	
-	margin-top : .625em ;
-	margin-bottom:21em;
+	margin-top : 1em ;
+	margin-bottom:4em;
+	margin-left:15em;
 	overflow:hidden ; 
 }
 
 #pic img { max-height:100% ; max-width:100% ; } 
-/* ---------------------------------------------------------------------------------------------------------------------- */
-/*#name{
-	z-index:2 ; 
-}
-#name::before {
-	z-index:1 ; 
-	content:'' ; 
-	border-radius:3px ; 
-	background-color:#FC9 ; 
-	right:3em ; 
-	position:absolute ;  
-	width:6em ; 
-	height:1.8em ; 
-}*/
+

@@ -64,11 +64,33 @@ body > div {
 	border : 1px solid #486499 ; 
 	border-radius:100% ; 	
 	margin-top : .625em ; 
-	overflow:hidden ; 
+	overflow:hidden ;
+	z-index:-1 ;
+	transition:border-color .01s linear ; 
 }
 
 #pic img { max-height:10em ; max-width:10em ; } 
+#uploadAx {
+	height:100% ;
+	width:100%; 
+	border : 1px solid #486499 ; 
+	border-radius:25% ;
+	position:relative ; 
+	top:-10.8em ;
+	text-align:center;
+	transition:all .01s linear ;
+	opacity:0 ;
+	padding-top:50%;
+	color:white;	
+}
+#pic:hover #uploadAx  {
+	background-color:#333 ; 
+	opacity : .8 ; 	
+}
 
+#pic:hover {
+	border-color:#000 ; 	
+}
 #acc {
 	width:90% ; 
 	height:6.25em ; 
