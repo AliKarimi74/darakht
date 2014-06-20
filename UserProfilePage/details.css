@@ -1,6 +1,6 @@
 body {
 	background-color:#414242 ;
-	background-image:url(bg.png)
+	background-image:url(bg.png) ;
 }
 body p { 
 	font-family:"B Homa" ;
@@ -44,7 +44,7 @@ body p {
 }
 /* ------------------------------------------------------tiltle---------------------------------------------------------- */
 #title {
-	background:url(bg2.png);
+	background: url(bg2.png);
 	padding-top:1em;
 	height:5%;
 	margin-left:0;
@@ -65,15 +65,12 @@ body p {
 #right {
 	text-align:right ; 
 	display:inline-block;
-	/*border: 1px solid black ;*/
 	width:48%;
 	height:60%;	
 	margin-top:5% ;
 }
 #right > div {
-	/*margin-left: 10%;*/
-	padding-top : .5em;
-	
+	padding-top : .5em;	
 }
 
 #nameBD {
