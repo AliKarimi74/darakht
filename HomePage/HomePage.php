@@ -280,8 +280,8 @@ $(document).ready(function(){
         $("#pop").slideUp();
     });
     //---------------------------------------------------slide show-------------------------------------------
-    var list=["first.jpg","1.jpg","2.jpg","4.jpg","5.jpg"];
-    var size=5;
+    var list=["101.jpg","103.jpg","102.jpg","first.jpg","100.png","1.jpg","2.jpg","4.jpg","5.jpg"];
+    var size=9;
     var i=0;
     //$("#ax2").src = "3.jpg";
     $("#ax").attr('src', list[i]);i++;
@@ -324,8 +324,8 @@ $(document).ready(function(){
 
 //-----------------------------------------------App SlideShow---------------------------------------------------
 
-    var list2=["10.jpg","11.jpg","12.jpg","14.jpg","15.jpg","16.png"];
-    var size2=6;
+    var list2=["scr1.png","scr2.png","scr12.png","scr3.png","scr4.png","scr11.png","scr5.png","scr6.png","scr8.png","scr9.png","scr10.png","scr13.png"];
+    var size2=12;
     var j=0;
     //$("#ax2").src = "3.jpg";
     $("#ax_1").attr('src', list2[j]);j++;
@@ -499,12 +499,12 @@ $firstButtonName = "ورود به سایـــت";
     <?php if ($userIsLogIn) { echo '<a href="'.'../UserProfilePage/userProfile.php?id='.$_SESSION['user_id']; } ?>">
         <span id="login"><?php echo $firstButtonName; ?></span>
     <?php if ($userIsLogIn) { echo '</a>'; } ?>
-    <span id="aboutus">دربـاره مـا</span>
     <span id="whyus" >جــرا مـا</span>
     <span id="howtouse">نحـوه اسـتفاده</span>
     <span id="app">اپلـکیشـن</span>
     <span id="sign">ثبـت نـام</span>
     <span id="contactus">تـماس بـا مـا</span>
+    <span id="aboutus">دربـاره سازندگـان</span>
     <?php if ($userIsLogIn) { ?>
         <a href="../logOut.php"><span id="exit">خروج</span> </a>
     <?php } ?>
@@ -517,6 +517,11 @@ $firstButtonName = "ورود به سایـــت";
 <!-- -------------------------------------------------------mainPanel----------------------------------------------------- --> 
 <div class="mainPanel">
   <div class="menu" >
+  
+  		
+        <div id="yellow">
+        <div><a href="#"><span>سازندگان</span></a></div>
+        </div>
   		
         <div id="red">
         <div><a href="#"><span>تـماس با مـا</span></a></div>
@@ -537,10 +542,6 @@ $firstButtonName = "ورود به سایـــت";
         <div id="blue">
         <div><a href="#"><span>چــرا مـا</span></a></div>
         </div>
-        
-        <div id="yellow">
-        <div><a href="#"><span>دربـاره مـا</span></a></div>
-        </div>
                 
     </div>  <!-- end of menu -->
     
@@ -548,49 +549,54 @@ $firstButtonName = "ورود به سایـــت";
 </div> <!--end of mainPanel-->
 
 
-<!-- ------------------------------------------------------AboutUsPanel--------------------------------------------------  -->     
-<div id="AboutUsPanel">
-	<div id="We">
-    	<div style="display:inline-block">
-        	<div><img src="RK.jpg" width="100%" height="100%"  /></div> <p align="center">رضـا کــرمی</p>
-        </div>
-        <div style="display:inline-block">
-        	<div><img src="AV.jpg" width="100%" height="100%"  /></div> <p align="center">عـلی خـوش ویشـکایی</p>
-        </div>
-        <div style="display:inline-block">
-        	<div><img src="EM.jpg" width="100%" height="100%"  /></div> <p align="center">الهـام میـرافضـلی</p>
-        </div>
-        <div style="display:inline-block">
-        	<div><img src="MR.jpg" width="100%" height="100%"  /></div> <p align="center">مـژده ربـاطی</p>
-        </div>
-        <div style="display:inline-block">
-        	<div><img src="AK.png" width="100%" height="100%"  /></div> <p align="center">علـی کـریمی</p>
-        </div>
-        <div style="display:inline-block">
-        	<div><img src="kp.png" width="100%" height="100%"  /></div> <p align="center">کیـان پیـمانی</p>
-        </div>
-     </div>  <!-- end of We -->
-</div>   <!-- end of AboutUsPanel -->
+
 <!-- -------------------------------------------------WhyUsPanel--------------------------------------------------------  -->
 <div id="WhyUsPanel">
-	
+	<div id="WhyUsDiscript">
+    	<div id="pragWhyUs" >
+            <p align="center" >
+                <h2  >چـــــرا  مــا ؟</h2>
+            ویــژگـی بـارزی کـه ایـن ســایــت را از سایـر سـایت هـای مــدیــریـت پـروژه مـتـمـایـــز مـی کـند ، گــرافـی بـودن آن اســت<br/>
+              شــما میتــوانیــد با تقسیــم بنـدی پروژه هایـتان به قسمــت های کـوچـک تر تـمام جـزییــات را بســیار دقیـق مـدیـریــت کنیــد<br/>
+              قسمت های مختلف پروژه ی خود را به افراد گروه بسپارید و با نمودار های دقیق سایت ، روند انجام هر قسمت را کنترل کنید<br/>
+              نمـودار ها شـامـل آنــالیز اعضـا که نشـان دهنـده ی میــزان کار انجــام شـده تـوسـط آن ها ، نـموداری کـه پیشـرفت پـروژه را بـه صـورت کلـی نشـان مـیدهـد و .. اسـت<br/>
+              تقــویم سـایـت موعــد مقــرر پایـان پروژه های شـما را نشـان می دهـد و شـما می تـوانیـد با افـزودن یـا حـذف یادآوری ها  ، آن را به دلـخـواه خـود شـخصـی سازی کنیـد<br/>
+              و با اپلیکیشـن ایـن سایـت می توانیـد در هـر زمـان رونـد انجام پروژه هایتـان را تحـت نظـر داشـته باشـد<br/>
+               با کمـک ایـن سایـت مـی توانیـد بــرای اجـــرای پروژه هایــتان به  بهـتـریـن  صـورت بــرنامـه ریــزی کنید <br/>         
+            </p>
+        </div> 
+        <div id="graph" >
+        </div>     
+    </div>
 </div>  <!-- end of WhyUsPanel -->
 <!-- ------------------------------------------------HowToUsePanel-------------------------------------------------------  -->
 <div id="HowToUsePanel">
-
+	<div id="UseSite">
+    </div>
 </div>  <!-- end of HowToUse -->
 <!-- ----------------------------------------------------AppPanel----------------------------------------------------------  -->
 <div id="AppPanel">
-    <!-- ---------------AppSlideshow-------------- -->
-    <div id="mobile" style="display:inline-block">
+	 <!-- ---------------AppSlideshow-------------- -->
+	<div id="mobile" style="display:inline-block">
         <img id="ax_1" />
         <img id="ax_2" />
-
     </div>
+    
     <div id="appDiscript"  style="display:inline-block">
-    </div>
-
-
+    	<p align="center">
+     		<h2  >اپلــکیـــشن پروژه درخـتی </h2>
+           با نصب این اپلیکیشن در تلفن همــراه خود می تـوانیـد  به بهتــرین شکل و در کـوتاه تـرین زمـان پروژه های خـود را مـدیــریـت کنید<br/>
+            ...رونـد پیشــرفت پـروژه های خـود را بـا نـمودارهایی بسیار دقیـق  دنبـال کنیـد<br/>
+         	...ایــده های خـود را بـرای اجرای هرچه بهـتر پروژه ها در این نرم افـزار ذخیـره کنید<br/>
+            ...ارسـال پیـام به هم تیـمی های خـود<br/>
+           ... و <br/>
+            با مـا تجـربه کنید            
+        </p>
+        
+    </div>  <!--  end of appDiscript -->
+    <div id="linkdl">
+    	<span >دانـلـــود </span>
+    </div>   <!-- end of linkdl -->
 </div>  <!-- end of AppPanel -->
 <!--  ---------------------------------------------------signupPanel-------------------------------------------------------  -->
 <div id="signupPanel">
@@ -678,6 +684,58 @@ $firstButtonName = "ورود به سایـــت";
     </div> <!-- end of AH -->
 </div>  <!-- end of ContactSend -->
 
+<!-- ------------------------------------------------------AboutUsPanel--------------------------------------------------  -->     
+<div id="AboutUsPanel">
+	<div id="aboutWe">
+    	<p align="center" >
+                <h3>دربـاره ی مـا</h3>
+                ایـن وب سایـت توسـط گروهـی از دانشـجویـان دانشگـاه علـم و صنعـت ایـران در خـرداد مـاه سال 1393 طراحی شـده و به مـرحله ی اجـرا رسیـده اسـت.
+                ایـن سایـت توسـط اچ تی ام ال ، سی اس اس ، جاوااسکریپت , پی اچ پی نوشـته شـده 
+                <br/>               
+                در پـایان از استـاد ارجـمند دکتــر زینـب موحـدی و آقایان رضـا شایستـه پــور و پیـمان حسـن آبادی که مـا را در انجـام ایـن پروژه یاری کردنـد ، تشـکر و قدردانی می نماییـم     
+        </p>
+    </div>
+	<div id="aboutWe2">
+    	<p align="center" >  
+                <h4 style="text-align:left">      Design(HTML , CSS , JavaScript) :</h4>
+                <p>
+                	کـیان پیـمانی <br/>
+                    مـژده رباطـی <br/>
+                    الهـام میـرافضـلی 
+                </p>
+                <h4 style="text-align:left">    ServerSide(PHP) :</h4>
+                <p>
+                	علـی کـریـمی
+                </p>
+                <h4 style="text-align:left">     MobileApp :</h4>
+                <p>
+                	رضا کرمی<br/>
+                    علـی اکـبر خوش ویـشکایی
+                </p>               
+        </p>
+    </div>
+	
+	<div id="We">
+    	<div style="display:inline-block">
+        	<div><img src="RK.jpg" width="100%" height="100%"  /></div> <p align="right">رضـا کــرمی</p>
+        </div>
+        <div style="display:inline-block">
+        	<div><img src="AV.jpg" width="100%" height="100%"  /></div> <p align="right" >عـلی خـوش ویشـکایی</p>
+        </div>
+        <div style="display:inline-block">
+        	<div><img src="EM.jpg" width="100%" height="100%"  /></div> <p align="right">الهـام میـرافضـلی</p>
+        </div>
+        <div style="display:inline-block">
+        	<div><img src="MR.jpg" width="100%" height="100%"  /></div> <p align="right">مـژده ربـاطی</p>
+        </div>
+        <div style="display:inline-block">
+        	<div><img src="AK.png" width="100%" height="100%"  /></div> <p align="right">علـی کـریمی</p>
+        </div>
+        <div style="display:inline-block">
+        	<div><img src="kp.png" width="100%" height="100%"  /></div> <p align="right">کیـان پیـمانی</p>
+        </div>
+     </div>  <!-- end of We -->
+</div>   <!-- end of AboutUsPanel -->
     <!-- ----------------------ExcessServer-->
     <div id="excessPop">
         <span id="excessmsg" >متن پیام سرور</span><br/>

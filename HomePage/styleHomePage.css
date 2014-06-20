@@ -19,7 +19,7 @@
 }
 #ax2
 {
-	position:absolute;
+	position:absolute
 	width:100%;
 	height:100%;
 }
@@ -151,7 +151,6 @@ body * { font-family:"B Homa" ; }
 }
 
 /* -------------------------------------------------------------body---------------------------------------------------- */
-
 body{
 	overflow:hidden;
 	background-color:#666 ;
@@ -321,46 +320,42 @@ a {
 	margin-top:1.5em ; 
 }
 
-/* ---------------------------------------------------------AboutUsPanel-------------------------------------------------  */
-#AboutUsPanel {
-	border:none;
-	background:url(bgb.png) ;
-	opacity:0.9;
-	height:50em;
-}
-
-#We {
-	padding-top:35em;
-	width:60% ;  
-	margin:auto ; 
-	height:13.5em ; 
-	background:url(bgb.png) ;
-	font-size:14px;
-	color:#FFF;
-	opacity:0.9;
-}
-
-#We div { 
-	margin:auto ; 
-}
-
-#We div div {
-	width:100px ;
-	height:100px ;
-	margin-left:20px ;
-	margin-top:1em ; 
-	border:1px solid black ; 
-	box-shadow:0px 2px 10px rgba(72,100,147,1);
-	overflow:hidden ;
-	border-radius:100% ; 
-}
 
 /* --------------------------------------------------------WhyUsPanel---------------------------------------------------  */
 #WhyUsPanel {
 	border:none;
-	background:url(../blue/p5.jpg) ;
+	background: url(bgblack.png);
 	height:50em;
-	opacity:0.8;
+	opacity:0.9;
+	padding-top:.5em;
+}
+#WhyUsDiscript {
+	border:1px solid white ;
+	background:url(bg.png) ;
+	width : 80% ;
+	height:60% ;
+	margin-left: 10%;
+	margin-top: 7%;
+	box-shadow:0em 0em 2em #000000 ;
+	font-size:15px;
+	color:#000;
+	text-align:right;
+}
+#pragWhyUs {
+	position:absolute;
+	width:40%;
+	height:60% ;
+	padding-right:2em ;
+	margin-left:38%;
+	
+}
+#graph {
+	background:url(graph.png);
+	width:40%;
+	height:60% ;
+	box-shadow:0em 0em 2em #000000 ;
+	margin-top:15%;
+	margin-left:5%;
 	
 }
 /* -------------------------------------------------------HowToUsePanel--------------------------------------------------  */
@@ -368,52 +363,61 @@ a {
 	background-image:#CFF;
 	height:50em;
 	opacity:0.5;
-	url(bgGreen.png)
-		
+	padding-top:.5em;		
 }
-
+#UseSite {
+	background:#FFF;
+	width : 80% ;
+	height:60% ;
+	margin-left: 10%;
+	margin-top: 7%;
+	box-shadow:0em 0em 2em #000000 ;
+	font-size:16px;
+	color:#000;
+	text-align:right;	
+}
 /* --------------------------------------------------------AppPanel------------------------------------------------------  */
 #AppPanel {
-	background:url(android.jpg);
+	background: url(blue2.jpg);
 	height:50em;
 	padding-top:5em;
+	opacity:0.92;
 }
-#mobile{
+#mobile {
 	border:1px solid black ;
-	border-radius:5%;
-	width:19%;
-	height:62%;
+	width:17%;
+	height:55%;
 	position:absolute;
-	top:15%;
-	left:20%;
+	top:5%;
+	left:70%;
 	overflow:hidden ;
-	margin-top:201em;
+	margin-top:160em;
 	box-shadow: 0em 0em 1.5em #000000;
+	opacity:1;
 }
 #linkdl {
-	border:1px double  #006633 ;
-	color:#FFF;
-	background:rgb(64,5,1);
+	border:1px double rgb(18,129,169);
+	color:#000;
+	background: rgb(18,129,169);
 	width:12%;
 	height:5%;
-	top:97%;
-	left:15%;
-	margin-left:23%;
-	margin-top:12%;
-	border-radius:5%;
+	top:35%;
+	left:14.5%;
+	margin-left:73%;
+	margin-top:5%;
+	border-radius:100%;
 	text-align:center;
 	cursor:pointer;
 	box-shadow: 0em 0em 1.5em #000000;
 }
 #linkdl {
-  display: inline-block;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 1em #000000;
 }
 #linkdl:hover, #linkdl:focus, #linkdl:active {
   -webkit-transform: scale(1.1);
@@ -432,31 +436,24 @@ a {
 	height:100%;
 }
 #appDiscript {
-	background:rgb(64,5,1);
-	width : 35% ;
-	height: 35% ;
-	margin-left: 53%;
-	margin-top: 3%;
+	background: url(gray2.jpg);
+	width : 40% ;
+	height: 40% ;
+	margin-left: 15%;
+	margin-top: 7%;
 	box-shadow:0em 0em 2em #000000 ;
 	font-size:16px;
-	color:#FFF;
+	color:#000;
 	padding-top:.5em;
-	padding-right:.5em;
+	padding-right:1em;
 	text-align:right;
+	border-radius:5%;
 }
 /* -------------------------------------------------------signupPanel-----------------------------------------------------  */
 #signupPanel {
 	height:50em;
 	background-image:url(bgblack.png);	
 }
-/*#pic {
-	height:4em;
-	width:4em;
-	border-radius:100%;	
-	margin-left:30em;
-	
-}*/
-
 #signup {
 	height:25em;
 	width:25em;
@@ -470,12 +467,10 @@ a {
 	margin-top:1em;
 	border-radius:0.5em;	
 }
-
 #signup input:hover {
 	box-shadow:0em 0em 1.5em #FFF;
 	
 }
-
 #signup form * {
 	font-size:18px;
 	/*border-radius: 5%;*/
@@ -661,6 +656,80 @@ a {
   opacity: 1;
   -webkit-transform: translateY(15px);
   transform: translateY(15px);
+}
+/* ---------------------------------------------------------AboutUsPanel-------------------------------------------------  */
+#AboutUsPanel {
+	border:none;
+	background:url(gray1.jpg) ;
+	opacity:0.9;
+	height:47em;
+	padding-top:.1em;
+	text-align:right ;
+	font-size:16px;
+}
+#aboutWe {
+	border:1px solid white ;
+	width:40%;
+	height:53%;
+	position:absolute ;
+	border-radius:5%;
+	box-shadow: 0px 0px 1em  #000000 ;
+	background:url(bg.png);
+	margin-left:50%;
+	margin-top:7%;
+	padding-left:2em ;
+	padding-right:2em ;
+	opacity:.92;
+}
+#aboutWe2 {
+	border-radius:5%;
+	box-shadow: 0px 0px 1em  #000000 ;
+	background:url(bg.png);
+	margin-left:15%;
+	margin-top:7%;
+	opacity:.92;
+	font-size:14px;
+	padding-top:.5%;
+	padding-right:3%;
+	padding-left:3%;
+	width:25%;
+	height:46%;
+}
+#We {
+	width:60% ;  
+	margin:auto ; 
+	height:10em ; 
+	font-size:14px;
+	color:#000;
+	margin-top:1%;
+}
+#We div { 
+	margin:auto ; 
+}
+#We div div {
+	width:5em ;
+	height:5em ;
+	margin-left:3em ;
+	margin-top:1em ;  
+	box-shadow:0px 0px .5em  #000000;
+	overflow:hidden ; 
+}
+#We div div{
+  display: inline-block;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+   border-radius:0;
+
+}
+#We div div:hover, #We div div:focus, #We div div:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+   border-radius:50%;
+  border:1px solid black;
 }
 /* ------------------------------ ExcessServer--------------------------------------------  */
 
